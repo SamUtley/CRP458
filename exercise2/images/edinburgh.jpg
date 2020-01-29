@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='content-language' content='en' />
+	  
+	  <title>Large Edinburgh Maps for Free Download and Print | High-Resolution and Detailed Maps</title>
+	  
+	  <meta name='description' content="Detailed and high-resolution maps of Edinburgh, Great Britain for free download. Travel guide to touristic destinations, museums and architecture in Edinburgh." />
+	  
+	  <meta name='keywords' content="Edinburgh, Great Britain, High-Resolution, Printed, map, detailed, download, print" />
+	  
+	<!-- mobile alternate -->
+	
+	<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open Sans|Average|Courgette|Jura' />
+	<link rel='stylesheet' type='text/css' href='//www.orangesmile.com/travelguide/css/style_2017.css' />
+	<link rel='stylesheet' type='text/css' href='//www.orangesmile.com/tmp/jquery_bold/css/custom-theme/jquery-ui-1.8.16.custom.css'  />
+	<link rel='stylesheet' type='text/css' href='//www.orangesmile.com/tmp/lightbox2/src/css/lightbox.css' />
+	<link rel='stylesheet' type='text/css' href='//www.orangesmile.com/tmp/lang-switcher/css/polyglot-language-switcher-3.css' /> 
+	
+	<link rel='stylesheet' type='text/css' href='//www.orangesmile.com/js/wowslider/city_full_900_500_90_synch_carousel_effect/engine1/style.css' />
+	<link rel='stylesheet' type='text/css' href='//www.orangesmile.com/js/wowslider/style_long.css' />
+	
+	<style>
+.wall { 
+	background: url(http://www.orangesmile.com/img/top_generic_fullscr.jpg) repeat-x center top, url(http://www.orangesmile.com/common/img_panorama_1920/gb-edinburgh.jpg) no-repeat center 80px, url(http://www.orangesmile.com/img/gray_stripe_background.jpg) repeat-x center 80px;   
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://www.orangesmile.com/common/img_panorama_1920/gb-edinburgh.jpg', sizingMethod='scale');
+	background-attachment: scroll; 
+}	
+	</style>
+	
+	<!--LiveInternet counter--><script type="text/javascript"><!--
+new Image().src = "//counter.yadro.ru/hit?r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random();//--></script><!--/LiveInternet-->
+
+<style type='text/css'>
+  	#ui-datepicker-div{
+		display:none;
+	}
+</style>
+
+<link rel='stylesheet' type='text/css' href='//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css' />
+<script src='//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js'></script>
+<script>
+window.addEventListener('load', function(){
+window.cookieconsent.initialise({
+  'palette': {
+    'popup': {
+      'background': '#eaf7f7',
+      'text': '#5c7291'
+    },
+    'button': {
+      'background': '#56cbdb',
+      'text': '#ffffff'
+    }
+  },
+  'content': {
+    'message': 'We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our advertising partners. ',
+    'dismiss': 'OK',
+    'link': 'Details',
+    'href': 'https://www.google.com/policies/technologies/cookies/'
+  }
+})});
+</script>	
+<script src='//maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA4JV3S_5DC-T5fCcR5PayXxSc5tXFFBU3CtQRcIvR6xuo6zr-uBTrwSw9_Lz6py2cFU2JDmYYI1Z8DQ&hl=en' type='text/javascript'></script>  
+<script type='text/javascript'>
+//<![CDATA[
+function load() {
+	if (GBrowserIsCompatible()) {
+		var center = new GLatLng(55.95, -3.2);
+		var map = new GMap2(document.getElementById('MyMap'));
+		map.setCenter(center, 13);
+		}
+	}
+//]]>
+</script>
+  
+</head>
+
+<body class='wall' onload='load();retrieveCookie()' onunload='GUnload()'> 
+	
+	<div id='wrap'>
+		
+		
+		<div id='header-section'>
+          	<a href='http://www.orangesmile.com/travelguide/'><img id='header-background-right' width='650' height='80' src='http://www.orangesmile.com/img/top_generic_2011.jpg' alt='OrangeSmile Tours'/></a>		
+          	<a href='http://www.orangesmile.com/travelguide/'><img id='header-background-right' width='330' height='80' src='http://www.orangesmile.com/img/top_local_guide_en_2011.jpg' alt='Best destinations around the world - Travel Guide'/></a>
+		</div>
+		
+		<div id='menu'>
+			<ul>
+				<li><a href='http://www.orangesmile.com/'>Hotels</a></li>
+				<li><a href='http://www.orangesmile.com/carrental/'>Car Rental</a></li>		
+				<li><a href='http://www.orangesmile.com/travelguide/' class='selected'>City Guide</a></li>
+				<li><a href='http://www.orangesmile.com/extreme/en/'>Extreme Spots</a></li>
+				<li><a href='http://www.orangesmile.com/flyover/en/'>Cities in 3D</a></li>
+				<li><a href='http://www.orangesmile.com/booking/en/about_us.htm'>About Us</a></li> 
+				
+				<li style='float:right'><a href='http://www.orangesmile.com/travelguide/country_navigation.htm'>All countries</a></li> 
+			</ul>
+		</div>
+		<div class='cl-b'></div> 
+		
+		
+		<div class='on-panorama'>
+			<div class='title'>Edinburgh</div>
+			<div class='links'>				
+				<a href='http://www.orangesmile.com/travelguide/country_navigation.htm' class='link'>Countries navigation</a>				
+				<div class='langs'>
+					<div class='polyglot-language-switcher' data-grid-columns='1' data-anim-effect='slide' data-open-mode='click'> 
+						<ul style='display:none'>
+	
+							<li><a href='http://www.orangesmile.com/travelguide/edinburgh/index.htm' title='English (UK)' data-lang-id='en_UK' class='pls-selected-locale'><img src='http://www.orangesmile.com/tmp/lang-switcher/images/flags/gb.png' alt='English'> English</a></li>
+							<li><a href='http://www.orangesmile.com/destinations/edinburgh/index.htm' title='Russian' data-lang-id='ru_RU' ><img src='http://www.orangesmile.com/tmp/lang-switcher/images/flags/ru.png' alt='Russian'> Russian</a></li>
+							<li><a href='http://www.orangesmile.com/bestemmingen/edinburgh/index.htm' title='Dutch' data-lang-id='nl_NL' ><img src='http://www.orangesmile.com/tmp/lang-switcher/images/flags/nl.png' alt='Netherlands'> Dutch</a></li>
+							<li><a href='http://www.orangesmile.com/reiseinfos/edinburgh/index.htm' title='German' data-lang-id='de_DE' ><img src='http://www.orangesmile.com/tmp/lang-switcher/images/flags/de.png' alt='German'> German</a></li>
+							<li><a href='http://www.orangesmile.com/guia-turistica/edimburgo/index.htm' title='Spanish' data-lang-id='es_ES' ><img src='http://www.orangesmile.com/tmp/lang-switcher/images/flags/es.png' alt='Spanish'> Spanish</a></li>
+							<li><a href='http://www.orangesmile.com/guide-touristique/edimbourg/index.htm' title='French' data-lang-id='fr_FR' ><img src='http://www.orangesmile.com/tmp/lang-switcher/images/flags/fr.png' alt='French'> French</a></li>
+							<li><a href='http://www.orangesmile.com/gezirehberi/edinburgh/index.htm' title='Türkçe' data-lang-id='tr_TR'><img src='http://www.orangesmile.com/tmp/lang-switcher/images/flags/tr.png' alt='Türkçe'> Türkçe</a></li>						
+						</ul>
+					</div>
+				</div>
+				<div class='cl-b'></div>				
+			</div>
+			<div class='cl-b'></div>
+		</div>
+	
+		
+		
+		
+		<div class='main'>
+		
+			<div id='contentwrapper'>
+				
+				<div id='horizontal_nav'>
+					<ul>
+						<li>
+							<a href='http://www.orangesmile.com/travelguide/country_navigation.htm'>Country selection</a>
+						</li>
+						<li>
+							<a href='http://www.orangesmile.com/travelguide/great-britain/index.htm'>Great Britain</a>						
+						</li>
+						<li>
+							All cities &amp; regions &dArr;
+							<ul>
+								
+								<li><a href='http://www.orangesmile.com/travelguide/aberdeen/index.htm'>Aberdeen</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/bath/index.htm'>Bath</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/belfast/index.htm'>Belfast</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/birmingham/index.htm'>Birmingham</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/blackpool/index.htm'>Blackpool</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/bolton/index.htm'>Bolton</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/brighton/index.htm'>Brighton</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/bristol/index.htm'>Bristol</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/caernarfon/index.htm'>Caernarfon</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/cambridge/index.htm'>Cambridge</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/cardiff/index.htm'>Cardiff</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/chester/index.htm'>Chester</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/coventry/index.htm'>Coventry</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/index.htm'>Edinburgh</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/glasgow/index.htm'>Glasgow</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/inverness/index.htm'>Inverness</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/ipswich/index.htm'>Ipswich</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/isle-of-man/index.htm'>Isle Of Man</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/kilmarnock/index.htm'>Kilmarnock</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/leeds/index.htm'>Leeds</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/leicester/index.htm'>Leicester</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/liverpool/index.htm'>Liverpool</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/london/index.htm'>London</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/luton/index.htm'>Luton</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/manchester/index.htm'>Manchester</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/middlesbrough/index.htm'>Middlesbrough</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/newcastle/index.htm'>Newcastle</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/norwich/index.htm'>Norwich</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/nottingham/index.htm'>Nottingham</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/oxford/index.htm'>Oxford</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/portsmouth/index.htm'>Portsmouth</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/reading/index.htm'>Reading</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/sheffield/index.htm'>Sheffield</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/southampton/index.htm'>Southampton</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/sunderland/index.htm'>Sunderland</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/swansea/index.htm'>Swansea</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/wolverhampton/index.htm'>Wolverhampton</a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/york/index.htm'>York</a></li>							</ul>
+						</li>
+						<li>
+							<a href='http://www.orangesmile.com/travelguide/edinburgh/index.htm'>Edinburgh</a>
+						</li>
+					</ul>
+				</div>
+				<div class='cl-b'></div>
+	
+				
+				<div id='contentcolumn' align='justify'>
+					
+					<div class='left-menu-container'>
+						<div class='navigation'>
+						  <ul>
+						  	
+							<li><a href='http://www.orangesmile.com/travelguide/edinburgh/index.htm'><img src='http://www.orangesmile.com/img/2017/icon_guide_32.png' class='lmenu-icon' /><span class='lmenu-text'>Guide to Edinburgh</span></a>
+							
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/top-sightseeings.htm'><img src='http://www.orangesmile.com/img/2017/icon_coliseum_32.png' class='lmenu-icon' /><span class='lmenu-text'>Top sightseeing</span></a></li>
+							
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/architecture.htm'><img src='http://www.orangesmile.com/img/2017/icon_castle_32.png' class='lmenu-icon' /><span class='lmenu-text'>Architecture &amp; monuments</span></a></li>							
+							
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/familychildren--2595386.htm'><img src='http://www.orangesmile.com/img/2017/icon_family_32.png' class='lmenu-icon' /><span class='lmenu-text'>Family trip with kids</span></a></li>
+							
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/exclusive--2595386.htm'><img src='http://www.orangesmile.com/img/2017/icon_backpack_32.png' class='lmenu-icon' /><span class='lmenu-text'>Unusual weekend</span></a></li>
+							
+							 							
+							
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/culture--2595386.htm'><img src='http://www.orangesmile.com/img/2017/icon_culture_32.png' class='lmenu-icon' /><span class='lmenu-text'>Culture: sights to visit</span></a></li>
+							
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/attractions--2595386.htm'><img src='http://www.orangesmile.com/img/2017/icon_attractions_32.png' class='lmenu-icon' /><span class='lmenu-text'>Attractions &amp; nightlife</span></a></li>
+							
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/cuisine--2595386.htm'><img src='http://www.orangesmile.com/img/2017/icon_kitchen_32.png' class='lmenu-icon' /><span class='lmenu-text'>Cuisine &amp; restaurants</span></a></li>
+							
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/traditions--2595386.htm'><img src='http://www.orangesmile.com/img/2017/icon_costume_32.png' class='lmenu-icon' /><span class='lmenu-text'>Traditions &amp; lifestyle</span></a></li> 
+							
+							<li class='has-sub'><img src='http://www.orangesmile.com/img/2017/icon_3Dhotel_32.png' class='lmenu-icon' /><span class='lmenu-text'>Where to stay?</span>
+							  <ul>
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/originalhotels--2595386.htm'><span class='lmenu-text'>Extraordinary hotels</span></a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/stylishhotels--2595386.htm'><span class='lmenu-text'>Stylish design-hotels</span></a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/historyhotels--2595386.htm'><span class='lmenu-text'>Hotels with history</span></a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/luxhotels--2595386.htm'><span class='lmenu-text'>Luxury accommodation</span></a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/romantichotels--2595386.htm'><span class='lmenu-text'>Romantic hotels</span></a></li>
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/famoushotels--2595386.htm'><span class='lmenu-text'>Legendary hotels</span></a></li>
+							  </ul>
+							</li>							
+							
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/shopping--2595386.htm'><img src='http://www.orangesmile.com/img/2017/icon_shopping_32.png' class='lmenu-icon' /><span class='lmenu-text'>Shopping in Edinburgh</span></a></li>
+							
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/advices--2595386.htm'><img src='http://www.orangesmile.com/img/2017/icon_advices_32.png' class='lmenu-icon' /><span class='lmenu-text'>Tips for tourists</span></a></li>
+							
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/weather-forecast.htm'><img src='http://www.orangesmile.com/img/2017/icon_thermometer_32.png' class='lmenu-icon' /><span class='lmenu-text'>Weather forecast</span></a></li>
+							
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/photo-gallery.htm'><img src='http://www.orangesmile.com/img/2017/icon_photocamera_32.png' class='lmenu-icon' /><span class='lmenu-text'>Photo gallery</span></a></li>
+							
+							
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/high-resolution-maps.htm'><img src='http://www.orangesmile.com/img/2017/icon_map_32.png' class='lmenu-icon' /><span class='lmenu-text'>Maps of Edinburgh</span></a></li>
+							
+								<li><a href='http://www.orangesmile.com/travelguide/edinburgh/interactive-map.htm'><img src='http://www.orangesmile.com/img/2017/icon_earthhands_32.png' class='lmenu-icon' /><span class='lmenu-text'>Interactive map</span></a></li>
+							
+							
+							
+								<li class='has-sub'><img src='http://www.orangesmile.com/img/2017/icon_roomkeys_32.png' class='lmenu-icon' /><span class='lmenu-text'>Check hotel prices</span>
+									<ul>
+										<li><a href='http://www.orangesmile.com/booking/en/great-britain/edinburgh.htm'><span class='lmenu-text'>Hotels in Edinburgh</span></a></li>
+										<li><a href='http://www.orangesmile.com/booking/en/great-britain/edinburgh-apartments.htm'><span class='lmenu-text'>Apartments</span></a></li>
+										<li><a href='http://www.orangesmile.com/booking/en/great-britain/edinburgh-hostels.htm'><span class='lmenu-text'>Hostels</span></a></li>
+										<li><a href='http://www.orangesmile.com/booking/en/great-britain/edinburgh-guesthouses.htm'><span class='lmenu-text'>Guest houses</span></a></li>
+										<li><a href='http://www.orangesmile.com/booking/en/great-britain/edinburgh-family-hotels.htm'><span class='lmenu-text'>Family rooms</span></a></li>
+										<li><a href='http://www.orangesmile.com/booking/en/great-britain/edinburgh-hotels-budget.htm'><span class='lmenu-text'>Budget hotels</span></a></li>
+										<li><a href='http://www.orangesmile.com/booking/en/great-britain/edinburgh-hotels-luxury.htm'><span class='lmenu-text'>Luxurious hotels</span></a></li>
+										<li><a href='http://www.orangesmile.com/booking/en/great-britain/edinburgh-bed-and-breakfast.htm'><span class='lmenu-text'>Bed &amp; Breakfast</span></a></li>
+									</ul>
+								</li>
+							
+								<li><a href='http://www.orangesmile.com/carrental/great-britain/edinburgh_hire.htm'><img src='http://www.orangesmile.com/img/2017/icon_carrental_32.png' class='lmenu-icon' /><span class='lmenu-text'>Car rental</span></a></li>
+							
+								<li><a href='http://www.orangesmile.com/carrental/great-britain/edinburgh_minivan.htm'><img src='http://www.orangesmile.com/img/2017/icon_carrental_32.png' class='lmenu-icon' /><span class='lmenu-text'>Minivans, 9-seaters</span></a></li>
+						  </ul>
+						</div> <!-- end navigation -->
+					</div> <!-- end left-menu-container -->		
+		
+	
+					<div class='top-article'>
+						<h1 align='center'>Detailed hi-res maps of Edinburgh for download or print</h1>
+	
+						<div align='center'>				
+							<div align='center'>		
+		
+		<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-4850650950864871";
+		/* Graphics_468-60 2011 */
+		google_ad_slot = "2852289127";
+		google_ad_width = 468;
+		google_ad_height = 60;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+		
+</div>							<br/>
+						</div>
+	
+						<a name='0'></a>
+						<div class='map-block'>					
+							<div align='center' >
+								<a href='http://www.orangesmile.com/common/img_city_maps/edinburgh-map-0.jpg'><img src='http://www.orangesmile.com/common/img_city_maps_560/edinburgh-map-0.jpg' class='country-map' alt='Large map of Edinburgh 1' title='Large map of Edinburgh 1' /></a>
+							</div>
+							The actual dimensions of the Edinburgh map are 400 X 400 pixels, file size (in bytes) - 49000. You can open this downloadable and printable map of Edinburgh by clicking on the map itself or via this link: <a href='http://www.orangesmile.com/common/img_city_maps/edinburgh-map-0.jpg' class='noline'>Open the map</a>.
+										
+						</div>
+		
+						<a name='1'></a>
+						<div class='map-block'>					
+							<div align='center' >
+								<a href='http://www.orangesmile.com/common/img_city_maps/edinburgh-map-1.jpg'><img src='http://www.orangesmile.com/common/img_city_maps_560/edinburgh-map-1.jpg' class='country-map' alt='Detailed map of Edinburgh 2' title='Detailed map of Edinburgh 2' /></a>
+							</div>
+							The actual dimensions of the Edinburgh map are 1171 X 795 pixels, file size (in bytes) - 157427. You can open, download and print this detailed map of Edinburgh by clicking on the map itself or via this link: <a href='http://www.orangesmile.com/common/img_city_maps/edinburgh-map-1.jpg' class='noline'>Open the map</a>.
+										
+						</div>
+		
+						<!--
+						<div align='center'>
+							<script src='//yastatic.net/es5-shims/0.0.2/es5-shims.min.js'></script>
+							<script src='//yastatic.net/share2/share.js'></script>
+							<div class='ya-share2' data-services='vkontakte,facebook,odnoklassniki,twitter,lj'></div>
+						</div>
+						-->
+	
+						<div align='center' class='slideshow_block'>
+							<span class='slideshow_box' >Edinburgh - guide chapters</span>
+							<span class='slideshow_box' title='Top sights, monuments and attractions'><b class='slideshow-selected'>1</b></span>
+							<span class='slideshow_box' title='Family holidays - what to visit with your child'><a href='http://www.orangesmile.com/travelguide/edinburgh/familychildren--2595386.htm'>2</a></span>
+							<span class='slideshow_box' title='Cuisine, traditional recipes and restaurants'><a href='http://www.orangesmile.com/travelguide/edinburgh/cuisine--2595386.htm'>3</a></span>
+							<span class='slideshow_box' title='Traditions, festivals and famous events'><a href='http://www.orangesmile.com/travelguide/edinburgh/traditions--2595386.htm'>4</a></span>
+							<span class='slideshow_box' title='Cultural sights: must-visit places'><a href='http://www.orangesmile.com/travelguide/edinburgh/culture--2595386.htm'>5</a></span>
+							<span class='slideshow_box' title='Edinburgh city break: top entertainment, attractions and active leisure'><a href='http://www.orangesmile.com/travelguide/edinburgh/attractions--2595386.htm'>6</a></span>
+							<span class='slideshow_box' title='Tips for visitors - travel ideas, things to obey, to prepare'><a href='http://www.orangesmile.com/travelguide/edinburgh/advices--2595386.htm'>7</a></span>
+							<span class='slideshow_box' title='Exotic weekend in Edinburgh - spend your time off the beaten track'><a href='http://www.orangesmile.com/travelguide/edinburgh/exclusive--2595386.htm'>8</a></span>
+							<span class='slideshow_box' title='Travel ideas for weekend - most original hotels'><a href='http://www.orangesmile.com/travelguide/edinburgh/originalhotels--2595386.htm'>9</a></span>
+							<span class='slideshow_box' title='Most stylish accommodation in the region'><a href='http://www.orangesmile.com/travelguide/edinburgh/stylishhotels--2595386.htm'>10</a></span>
+							<span class='slideshow_box' title='Best luxurious places to stay in Edinburgh'><a href='http://www.orangesmile.com/travelguide/edinburgh/luxhotels--2595386.htm'>11</a></span>
+							<span class='slideshow_box' title='Old hotels, revealing the city history'><a href='http://www.orangesmile.com/travelguide/edinburgh/historyhotels--2595386.htm'>12</a></span>
+							<span class='slideshow_box' title='Legendary hotels'><a href='http://www.orangesmile.com/travelguide/edinburgh/famoushotels--2595386.htm'>13</a></span>
+							<span class='slideshow_box' title='Selection of best romantic hotels for couples in love'><a href='http://www.orangesmile.com/travelguide/edinburgh/romantichotels--2595386.htm'>14</a></span>
+							<span class='slideshow_box' title='Shopping - main streets, malls boutiques and outlets'><a href='http://www.orangesmile.com/travelguide/edinburgh/shopping--2595386.htm'>15</a></span>
+							<span class='slideshow_box' title='Top architectural landmarks and sites - where to go in Edinburgh'><a href='http://www.orangesmile.com/travelguide/edinburgh/top-sightseeings.htm'>16</a></span>
+							<span class='slideshow_box' title='Tour through Edinburgh architecture - castles, monuments, palaces, etc'><a href='http://www.orangesmile.com/travelguide/edinburgh/architecture.htm'>17</a></span>
+						</div>		
+					</div> <!-- end top-article -->
+			
+					<div>
+						<h2 align='center'>Additional maps of Edinburgh</h2>
+		
+						<div class='thumb-add-map-block' >
+							<a href='http://www.orangesmile.com/travelguide/edinburgh/city-maps.htm'><img src='http://www.orangesmile.com/destinations/img/edinburgh-map.jpg' class='thumb-add-map' title='Edinburgh map' alt='Edinburgh map' /></a>				
+						</div>
+			
+						<div class='thumb-add-map-block' style='cursor:pointer; width:71.66%;' onclick='location.href="http://www.orangesmile.com/geolocation/en/sightsmap_full.php?&supertypes=8|10|4|6|12|28&lat=55.95&long=-3.2&di=12&ci=Edinburgh&co=Great Britain&di=10";' >
+							<div id='MyMap' class='image_gm_square' style='' title='Click to open the large interactive map of Edinburgh'></div>					
+						</div>
+			
+						<div style='clear:both;'></div>					
+					</div> <!-- end add. maps -->
+		
+		<div align='center' class='excursions'>
+			<h2 align='center'>City tours, excursions and tickets in Edinburgh and surroundings</h2>
+			<div data-gyg-partner-id='GA17E8I' data-gyg-number-of-items='4' data-gyg-locale-code='en-US' data-gyg-cmp='EN_main' data-gyg-see-more='true' data-gyg-id='code-example' data-gyg-q='Edinburgh'  data-gyg-widget='activites' data-gyg-href='https://widget.getyourguide.com/GA17E8I/activities.frame'></div>
+
+			<script async defer src='https://widget.getyourguide.com/v2/widget.js'></script> 
+		</div>
+		
+					<div class='second-article'>
+					
+						<h2 align='center'>Moving around in Great Britain - transportation</h2>
+						
+						<a href='http://www.orangesmile.com/travelguide/great-britain/transport.htm' ><img src='http://www.orangesmile.com/common/img_panorama_w980/gb.jpg' class='frame-shadow-minipanorama left_photo' align='left' /></a>
+						The United Kingdom of Great Britain has the excellent transport infrastructure. Not only the huge tourist flow, but also the development of the country itself and, in particular, the business sphere contributed there. The total length of all roads is at least 399 thousand kilometers. At the same time, there are relatively few highways in the country. They make only about three and a half thousand kilometers. You can travel by car in any region of the country. Don’t forget that the UK has the left-hand traffic. In London, there is a metro or a tube that embraces 12 underground, land and mixed lines. It is worth noting that the lines are often split into separate small branches, so you should always follow the transport route. 
+						&hellip; <a  href='http://www.orangesmile.com/travelguide/great-britain/transport.htm' class='noline'>Open <img src='http://www.orangesmile.com/img/2017/icon_next_24.png' class='lmenu-icon' title='More'/></a>
+					</div>
+		
+				</div> <!-- end contentcolumn -->
+			</div> <!-- end contentwrapper -->
+			<div id='rightcolumn'>
+		
+				<div align='right'>
+									</div>
+				
+				
+				<div class='right-block'>
+					Car rental on OrangeSmile.com
+					<a href='http://www.orangesmile.com/carrental/great-britain/edinburgh-airport.htm'><img src='http://www.orangesmile.com/img/car_rental_tower.jpg' class='right-block-img' title='Car rental in Edinburgh' alt='Rentals in Edinburgh'/></a>
+				</div>
+	
+				
+				<div align='right'>
+					<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4850650950864871";
+/* Tower_graphics_160 */
+google_ad_slot = "3210429461";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script> 				</div>
+				
+				
+				
+				<div align='right'>
+									</div>
+				
+			</div> <!-- end rightcolumn -->
+			<div class='cl-b'></div>
+		
+			<div class='bottom-fullwidth wide-map-block' align='center'>
+			
+				<h2 align='center'>Search for services, infrastructure and sights on map of Edinburgh</h2>
+				
+				
+		<div class='wide-map-block-around-table'>		
+		<table>
+		<tr>
+			<td>
+				<form name='frm' method='post' action='//www.orangesmile.com/geolocation/en/sightsmap_full.php'> 
+				<a name='search'></a>
+				<div align='center' class='wide-map-block-inside-table'>
+			
+					<div align='left' class='wide-map-block-intern'>
+						<table>
+							<tr class='forms-header' style='margin-bottom:0;'>
+								<td>
+									Address/Sight name
+								</td>
+								<td>
+									City/Region
+								</td>
+								<td>
+									Country
+								</td>
+								<td>
+									Within radius, km
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type='text' name='Address' value='' size='16' onChange='cleanHiddenFields()'>
+								</td>
+								<td>
+									<input type='text' name='City' value='Edinburgh' size='14' onChange='cleanHiddenFields()'>
+								</td>
+								<td>
+									<input type='text' name='Country' value='Great Britain' size='12' onChange='cleanHiddenFields()'>
+								</td>
+								<td>
+									<input type='text' name='Distance' value='8' checked size='12'> 
+								</td>
+							</tr>			
+						</table>
+						<div>
+							<div class='forms-header' style='margin-top:5px'>
+								&nbsp;Types of touristic objects to search for
+							</div>
+							<div style='float:left; margin:2px; width:24%;'>
+								<div class='search_options'>
+									<b>Hotels &amp; Car rental</b>
+									<br/>
+									<input type='checkbox' name='supertypes[]' value='35'  />Carhire locations<br />
+									<div style='float:left'>
+										<img src='https://www.orangesmile.com/img/map_wordhotels_en.jpg'  />
+									</div>
+									<div style='float:left'>
+									<input type='checkbox' name='supertypes[]' value='370'  />0 star<br />
+									<input type='checkbox' name='supertypes[]' value='371'  />1 star<br />
+									<input type='checkbox' name='supertypes[]' value='372'  />2 stars<br />
+									<input type='checkbox' name='supertypes[]' value='373'  />3 stars<br />
+									<input type='checkbox' name='supertypes[]' value='374'  />4 stars<br />
+									<input type='checkbox' name='supertypes[]' value='375'  />5 stars<br />
+									</div>
+									<div style='clear:both'></div>
+								</div>
+							</div>
+							<div style='float:left; margin:2px; width:24%;'>
+								<div class='search_options'>
+									<b>Touristic places</b>
+									<br/>
+									<input type='checkbox' name='supertypes[]' value='7'  />Art galleries<br />
+									<input type='checkbox' name='supertypes[]' value='8' checked />Churches/Temples<br />	
+									<input type='checkbox' name='supertypes[]' value='10' />Museums<br />	
+									<input type='checkbox' name='supertypes[]' value='4' checked />Castles/Palaces<br />
+									<input type='checkbox' name='supertypes[]' value='2' checked  />Monuments<br />
+									<input type='checkbox' name='supertypes[]' value='5' checked  />Touristic areas<br />
+									<input type='checkbox' name='supertypes[]' value='1' checked  />Sightseeings<br />									
+								</div>
+							</div>
+							<div style='float:left; margin:2px; width:24%;'>
+								<div class='search_options'>
+									<b>Attractions</b>
+									<br/>
+									<input type='checkbox' name='supertypes[]' value='6'  />Attraction parks<br />
+									<input type='checkbox' name='supertypes[]' value='13'  />Casino<br />	
+									<input type='checkbox' name='supertypes[]' value='3'  />Theaters/Cinema<br />	
+									<input type='checkbox' name='supertypes[]' value='21'  />Disco/Clubs<br />	
+									<input type='checkbox' name='supertypes[]' value='12' />Parks<br />	
+									<input type='checkbox' name='supertypes[]' value='11'  />Zoo<br />	
+									<input type='checkbox' name='supertypes[]' value='86'  />Aqua parks<br />
+								</div>
+							</div>							
+							<div style='float:left; margin:2px; width:24%;'>
+								<div class='search_options'>
+									<b>Transport</b>
+									<br/>
+									<input type='checkbox' name='supertypes[]' value='26'  />Airports<br />									
+									<input type='checkbox' name='supertypes[]' value='28' />Train stations<br />
+									<input type='checkbox' name='supertypes[]' value='29'  />Bus stations<br />
+									<input type='checkbox' name='supertypes[]' value='27'  />Metro<br />	
+									<input type='checkbox' name='supertypes[]' value='33'  />Parkings<br />								
+									<input type='checkbox' name='supertypes[]' value='34'  />Fuel stations<br />
+									<input type='checkbox' name='supertypes[]' value='30'  />Ports/Ferries<br />
+								</div>
+							</div>	
+							<div style='clear:both'></div>
+							<div style='float:left; margin:2px; width:24%;'>
+								<div class='search_options'>
+									<div class='icon_open'>
+										<a href='javascript:void(0);showBlock("category_4");'><img src='http://www.orangesmile.com/img/icon_down_16.png'  alt='Open the list of object types' title='Open the list of object types'/></a>
+									</div>
+									<div class='option_header'>
+										<b>Health/Sport</b>
+									</div>
+									<div style='clear:both'></div>	
+									<div id='category_4' style='display:none; visibility:hidden;'>
+										<input type='checkbox' name='supertypes[]' value='22'  />Fitness centers<br />
+										<input type='checkbox' name='supertypes[]' value='14'  />Bowling<br />
+										<input type='checkbox' name='supertypes[]' value='43'  />Spa<br />	
+										<input type='checkbox' name='supertypes[]' value='39'  />Golf<br />	
+										<input type='checkbox' name='supertypes[]' value='19'  />Stadiums<br />	
+										<input type='checkbox' name='supertypes[]' value='40'  />Ski lifts<br />	
+										
+									</div>
+								</div>
+							</div>
+							<div style='float:left; margin:2px; width:24%;'>
+								<div class='search_options'>
+									<div class='icon_open'>
+										<a href='javascript:void(0);showBlock("category_5");'><img src='http://www.orangesmile.com/img/icon_down_16.png'  alt='Open the list of object types' title='Open the list of object types'/></a>
+									</div>
+									<div class='option_header'>
+										<b>Food/Money</b>
+									</div>
+									<div style='clear:both'></div>	
+									<div id='category_5' style='display:none; visibility:hidden;'>
+										<input type='checkbox' name='supertypes[]' value='53'  />Banks/ATM<br />
+										<input type='checkbox' name='supertypes[]' value='23'  />Cafe<br />
+										<input type='checkbox' name='supertypes[]' value='24'  />Bars<br />	
+										<input type='checkbox' name='supertypes[]' value='25'  />Restaurants<br />
+										<input type='checkbox' name='supertypes[]' value='74'  />Bakeries<br />
+										<input type='checkbox' name='supertypes[]' value='16'  />Supermarkets<br />
+									</div>	
+								</div>
+							</div>
+							<div style='float:left; margin:2px; width:49%;'>
+								<div class='search_options'>
+									<div class='icon_open'>
+										<a href='javascript:void(0);showBlock("category_6");'><img src='http://www.orangesmile.com/img/icon_down_16.png'  alt='Open the list of object types' title='Open the list of object types'/></a>
+									</div>
+									<div class='option_header'>
+										<b>Shopping</b>
+									</div>
+									<div style='clear:both'></div>	
+									<div id='category_6' style='display:none; visibility:hidden;'>
+										<div style='float:left; width:49%;'>
+										<input type='checkbox' name='supertypes[]' value='15'  />Shopping zones<br />	
+										<input type='checkbox' name='supertypes[]' value='17'  />Shopping malls<br />
+										<input type='checkbox' name='supertypes[]' value='18'  />Department stores<br />
+										<input type='checkbox' name='supertypes[]' value='68'  />Jewelry stores<br />
+										<input type='checkbox' name='supertypes[]' value='69'  />Liquor stores<br />
+										<input type='checkbox' name='supertypes[]' value='67'  />Furniture stores<br />
+										</div>
+										<div style='float:left; width:49%;'>
+										<input type='checkbox' name='supertypes[]' value='65' />Clothing stores<br />
+										<input type='checkbox' name='supertypes[]' value='73'  />Shoe stores<br />
+										<input type='checkbox' name='supertypes[]' value='66'  />Electronics stores<br />
+										<input type='checkbox' name='supertypes[]' value='50'  />Pet stores<br />
+										<input type='checkbox' name='supertypes[]' value='64'  />Book stores<br />
+										<input type='checkbox' name='supertypes[]' value='63'  />Bicycle stores<br />
+										</div>
+										<div style='clear:both'></div>	
+									</div>	
+								</div>
+							</div>	
+							<div style='clear:both'></div>
+							<div style='float:left; margin:2px; width:24%;'>
+								<div class='search_options'>
+									<div class='icon_open'>
+										<a href='javascript:void(0);showBlock("category_7");'><img src='http://www.orangesmile.com/img/icon_down_16.png'  alt='Open the list of object types' title='Open the list of object types'/></a>
+									</div>
+									<div class='option_header'>
+										<b>Beauty/Medicine</b>
+									</div>
+									<div style='clear:both'></div>	
+									<div id='category_7' style='display:none; visibility:hidden;'>										
+										<input type='checkbox' name='supertypes[]' value='61'  />Beauty salons<br />
+										<input type='checkbox' name='supertypes[]' value='62'  />Hair care<br />
+										<input type='checkbox' name='supertypes[]' value='48'  />Physiotherapists<br />
+										<input type='checkbox' name='supertypes[]' value='45'  />Pharmacy<br />
+										<input type='checkbox' name='supertypes[]' value='44'  />Hospitals<br />										
+										<input type='checkbox' name='supertypes[]' value='46'  />Dentists<br />										
+										<input type='checkbox' name='supertypes[]' value='47'  />Doctors<br />
+										<input type='checkbox' name='supertypes[]' value='49'  />Veterinary care<br />
+									</div>	
+								</div>
+							</div>
+							<div style='float:left; margin:2px; width:24%;'>
+								<div class='search_options'>
+									<div class='icon_open'>
+										<a href='javascript:void(0);showBlock("category_8");'><img src='http://www.orangesmile.com/img/icon_down_16.png'  alt='Open the list of object types' title='Open the list of object types'/></a>
+									</div>
+									<div class='option_header'>
+										<b>City services</b>
+									</div>
+									<div style='clear:both'></div>	
+									<div id='category_8' style='display:none; visibility:hidden;'>										
+										<input type='checkbox' name='supertypes[]' value='52'  />Post offices<br />		
+										<input type='checkbox' name='supertypes[]' value='51'  />Police<br />	
+										<input type='checkbox' name='supertypes[]' value='55'  />City halls<br />
+										<input type='checkbox' name='supertypes[]' value='57'  />Embassies<br />
+										<input type='checkbox' name='supertypes[]' value='56'  />Court houses<br />
+										<input type='checkbox' name='supertypes[]' value='20'  />Expo centers<br />
+										<input type='checkbox' name='supertypes[]' value='42'  />Libraries<br />
+										<input type='checkbox' name='supertypes[]' value='41'  />Universities<br />
+									</div>	
+								</div>
+							</div>
+							<div style='float:left; margin:2px; width:49%;'>
+								<div class='search_options'>
+									<div class='icon_open'>
+										<a href='javascript:void(0);showBlock("category_9");'><img src='http://www.orangesmile.com/img/icon_down_16.png'  alt='Open the list of object types' title='Open the list of object types'/></a>
+									</div>
+									<div class='option_header'>
+										<b>Useful services</b>
+									</div>
+									<div style='clear:both'></div>	
+									<div id='category_9' style='display:none; visibility:hidden;'>
+										<input type='checkbox' name='supertypes[]' value='60'  />Car wash<br />
+										<input type='checkbox' name='supertypes[]' value='36'  />Car repair<br />
+										<input type='checkbox' name='supertypes[]' value='59'  />Car dealers<br />
+										<input type='checkbox' name='supertypes[]' value='72'  />Movie rentals<br />
+										<input type='checkbox' name='supertypes[]' value='92'  />Real estate<br />
+										<input type='checkbox' name='supertypes[]' value='75'  />Laundry<br />
+										<input type='checkbox' name='supertypes[]' value='87'  />Campgrounds<br />
+										<input type='checkbox' name='supertypes[]' value='58'  />Travel agencies<br />
+									</div>	
+								</div>
+							</div>
+								
+							<div style='clear:both'></div>
+							
+							<div>
+								<div>
+									<input type='submit' class='search-button' name='button2' value='Search'>
+									<input name='submitted' type='hidden' value='submitted' />
+									<input type='hidden' id='lat_post' name='lat_post' value='55.95'>
+									<input type='hidden' id='long_post' name='long_post' value='-3.2'>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</form>
+			</td>
+		</tr>
+		</table>
+		</div>
+		
+			</div>
+	
+			<h2 align='center'>Photogallery of Edinburgh sightseeing</h2>
+		
+			<div id='contentwrapper-slider'>
+				<div id='contentcolumn-slider'>				
+					
+					<div id='wowslider-container1'>
+						<div class='ws_images'>
+						<ul>
+	
+							<li><img src='http://www.orangesmile.com/common/img_cities_original/edinburgh--2595386-16.jpg' title='' id='wows1_0' class='wows1_0'/></li>
+			
+							<li><img src='http://www.orangesmile.com/img/empty.png' title='North Bridge, Edinburgh' id='wows1_1' class='wows1_1'/></li>
+			
+							<li><img src='http://www.orangesmile.com/img/empty.png' title='Edinburgh Panorama: Old Town' id='wows1_2' class='wows1_2'/></li>
+			
+							<li><img src='http://www.orangesmile.com/img/empty.png' title='edinburgh' id='wows1_3' class='wows1_3'/></li>
+			
+							<li><img src='http://www.orangesmile.com/img/empty.png' title='UNESCO World Heritage Site Edinburgh' id='wows1_4' class='wows1_4'/></li>
+			
+							<li><img src='http://www.orangesmile.com/img/empty.png' title='Edinburgh' id='wows1_5' class='wows1_5'/></li>
+			
+							<li><img src='http://www.orangesmile.com/img/empty.png' title='Edinburgh Castle' id='wows1_6' class='wows1_6'/></li>
+			
+							<li><img src='http://www.orangesmile.com/img/empty.png' title='Edinburgh Cityscape' id='wows1_7' class='wows1_7'/></li>
+			
+							<li><img src='http://www.orangesmile.com/img/empty.png' title='' id='wows1_8' class='wows1_8'/></li>
+			
+							<li><img src='http://www.orangesmile.com/img/empty.png' title='Edinburgh New Town' id='wows1_9' class='wows1_9'/></li>
+			
+						</ul>
+						</div>
+						
+						<div class='ws_thumbs'>
+							<div>
+	
+							<a href='#wows1_0' title=''><img src='http://cdn77.orangesmile.com/common/img_cities_tooltips_140/edinburgh--2595386-16.jpg' /></a>
+		
+							<a href='#wows1_1' title='North Bridge, Edinburgh'><img src='http://cdn77.orangesmile.com/common/img_cities_tooltips_140/edinburgh--2595386-14.jpg' /></a>
+		
+							<a href='#wows1_2' title='Edinburgh Panorama: Old Town'><img src='http://cdn77.orangesmile.com/common/img_cities_tooltips_140/edinburgh--2595386-9.jpg' /></a>
+		
+							<a href='#wows1_3' title='edinburgh'><img src='http://cdn77.orangesmile.com/common/img_cities_tooltips_140/edinburgh--2595386-4.jpg' /></a>
+		
+							<a href='#wows1_4' title='UNESCO World Heritage Site Edinburgh'><img src='http://cdn77.orangesmile.com/common/img_cities_tooltips_140/edinburgh--2595386-0.jpg' /></a>
+		
+							<a href='#wows1_5' title='Edinburgh'><img src='http://cdn77.orangesmile.com/common/img_cities_tooltips_140/edinburgh--2595386-3.jpg' /></a>
+		
+							<a href='#wows1_6' title='Edinburgh Castle'><img src='http://cdn77.orangesmile.com/common/img_cities_tooltips_140/edinburgh--2595386-2.jpg' /></a>
+		
+							<a href='#wows1_7' title='Edinburgh Cityscape'><img src='http://cdn77.orangesmile.com/common/img_cities_tooltips_140/edinburgh--2595386-7.jpg' /></a>
+		
+							<a href='#wows1_8' title=''><img src='http://cdn77.orangesmile.com/common/img_cities_tooltips_140/edinburgh--2595386-15.jpg' /></a>
+		
+							<a href='#wows1_9' title='Edinburgh New Town'><img src='http://cdn77.orangesmile.com/common/img_cities_tooltips_140/edinburgh--2595386-6.jpg' /></a>
+		
+							</div>
+						</div> <!-- ws_thumbs -->
+						<div class='ws_shadow'></div>
+					</div> <!-- wowslider-container1 -->
+						
+				</div> <!-- end contentcolumn-slider -->
+			</div> <!-- end contentwrapper-slider -->
+			<div id='leftcolumn-slider'>
+					<script async src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>
+					<!-- Bottom_300x600_2016 -->
+					<ins class='adsbygoogle'
+						 style='display:inline-block;width:300px;height:600px'
+						 data-ad-client='ca-pub-4850650950864871'
+						 data-ad-slot='3393407878'></ins>
+					<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+			</div> <!-- end leftcolumn-slider -->
+			<div class='cl-b'></div>			
+				
+<script language='javascript'>		
+	var loadPhotos = function()
+	{
+	
+		if (document.getElementById('wows1_0').src == 'http://www.orangesmile.com/img/empty.png') 
+		{
+			$('.wows1_0').attr('src','http://www.orangesmile.com/common/img_cities_original/edinburgh--2595386-16.jpg');					
+		}
+		
+		if (document.getElementById('wows1_1').src == 'http://www.orangesmile.com/img/empty.png') 
+		{
+			$('.wows1_1').attr('src','http://www.orangesmile.com/common/img_cities_original/edinburgh--2595386-14.jpg');					
+		}
+		
+		if (document.getElementById('wows1_2').src == 'http://www.orangesmile.com/img/empty.png') 
+		{
+			$('.wows1_2').attr('src','http://www.orangesmile.com/common/img_cities_original/edinburgh--2595386-9.jpg');					
+		}
+		
+		if (document.getElementById('wows1_3').src == 'http://www.orangesmile.com/img/empty.png') 
+		{
+			$('.wows1_3').attr('src','http://www.orangesmile.com/common/img_cities_original/edinburgh--2595386-4.jpg');					
+		}
+		
+		if (document.getElementById('wows1_4').src == 'http://www.orangesmile.com/img/empty.png') 
+		{
+			$('.wows1_4').attr('src','http://www.orangesmile.com/common/img_cities_original/edinburgh--2595386-0.jpg');					
+		}
+		
+		if (document.getElementById('wows1_5').src == 'http://www.orangesmile.com/img/empty.png') 
+		{
+			$('.wows1_5').attr('src','http://www.orangesmile.com/common/img_cities_original/edinburgh--2595386-3.jpg');					
+		}
+		
+		if (document.getElementById('wows1_6').src == 'http://www.orangesmile.com/img/empty.png') 
+		{
+			$('.wows1_6').attr('src','http://www.orangesmile.com/common/img_cities_original/edinburgh--2595386-2.jpg');					
+		}
+		
+		if (document.getElementById('wows1_7').src == 'http://www.orangesmile.com/img/empty.png') 
+		{
+			$('.wows1_7').attr('src','http://www.orangesmile.com/common/img_cities_original/edinburgh--2595386-7.jpg');					
+		}
+		
+		if (document.getElementById('wows1_8').src == 'http://www.orangesmile.com/img/empty.png') 
+		{
+			$('.wows1_8').attr('src','http://www.orangesmile.com/common/img_cities_original/edinburgh--2595386-15.jpg');					
+		}
+		
+		if (document.getElementById('wows1_9').src == 'http://www.orangesmile.com/img/empty.png') 
+		{
+			$('.wows1_9').attr('src','http://www.orangesmile.com/common/img_cities_original/edinburgh--2595386-6.jpg');					
+		}
+		
+	}
+</script>
+	
+		
+			<div class='bottom-fullwidth'>
+				<h2 align='center'>Our guide chapters over Edinburgh</h2>
+	
+					<div class='left-half'>
+						<h3 style='margin:0 0 10px 0'><a href='http://www.orangesmile.com/travelguide/edinburgh/attractions--2595386.htm'>Attractions and active leisure</a></h3>						
+						<div class='topic-digest'>
+							 Edinburgh is a perfect place for golf lovers. On the territory of the city and its surroundings are organized numerous golf clubs that always welcome new visitors. There are also sports centers in Edinburgh. They will also not disappoint devotees of active pastime.    Thursdays, Fridays and Saturdays are best days to visit Cafe City 2 that hosts colorful parties. What&#8217;s really nice – the entrance to these  &hellip; <a href='http://www.orangesmile.com/travelguide/edinburgh/attractions--2595386.htm' class='noline'> Open <img src='http://www.orangesmile.com/img/2017/icon_next_16.png' class='lmenu-icon' title='Further'/></a>
+						</div>
+					</div>
+					
+					<div class='right-half'>
+						<h3 style='margin:0 0 10px 0'><a href='http://www.orangesmile.com/travelguide/edinburgh/cuisine--2595386.htm'>Cuisine and top restaurants</a></h3>						
+						<div class='topic-digest'>
+							 The Atrium is one of most popular restaurants of the city. Here you will always find the atmosphere of coziness and mystery. Goose liver pate with hazelnuts, roasted breast of guinea hen with special sauce and vegetable puree are among the most popular dishes in local restaurants. Lovers of sweets are recommended to try orange cheesecakes and mousses of all kinds. If you want to try best dishes from national  &hellip; <a href='http://www.orangesmile.com/travelguide/edinburgh/cuisine--2595386.htm' class='noline'> Open <img src='http://www.orangesmile.com/img/2017/icon_next_16.png' class='lmenu-icon' title='Further'/></a>
+						</div>
+					</div>
+					<div class='cl-b'></div>
+					
+					<div class='left-half'>
+						<h3 style='margin:0 0 10px 0'><a href='http://www.orangesmile.com/travelguide/edinburgh/originalhotels--2595386.htm'>Unusual hotels</a></h3>						
+						<div class='topic-digest'>
+							The old town area is the location of another wonderful hotel, Hotel Du Vin Edinburgh. This high-class hotel is open in the building of the former hospital. Nowadays, not much reminds of the former purpose of the building. Hospital wards have been turned into stylish rooms with all necessary amenities and equipment. Some elements of décor remind of traditions of the past – in some rooms, it&#8217;s still possible  &hellip; <a href='http://www.orangesmile.com/travelguide/edinburgh/originalhotels--2595386.htm' class='noline'> Open <img src='http://www.orangesmile.com/img/2017/icon_next_16.png' class='lmenu-icon' title='Further'/></a>
+						</div>
+					</div>
+					
+					<div class='right-half'>
+						<h3 style='margin:0 0 10px 0'><a href='http://www.orangesmile.com/travelguide/edinburgh/traditions--2595386.htm'>Traditions and mentality of Edinburgh</a></h3>						
+						<div class='topic-digest'>
+							 Hogmanay – the local New Year – remains the favorite holiday of locals and tourists. The celebration starts on December 29. During four days various celebrations and public festivals take place on the streets of Edinburgh. Colorful fairs, theatrical performances and activities for children – you will see many people on the streets of the city until late at night. This celebration is also notable for numerous  &hellip; <a href='http://www.orangesmile.com/travelguide/edinburgh/traditions--2595386.htm' class='noline'> Open <img src='http://www.orangesmile.com/img/2017/icon_next_16.png' class='lmenu-icon' title='Further'/></a>
+						</div>
+					</div>
+					<div class='cl-b'></div>
+					
+					<div class='left-half'>
+						<h3 style='margin:0 0 10px 0'><a href='http://www.orangesmile.com/travelguide/edinburgh/index.htm'>Travel guide to Edinburgh</a></h3>						
+						<div class='topic-digest'>
+							<strong>Five galleries.</strong> Five galleries, which are scattered all over the city, feature works of outstanding artists of different periods of time. The National Gallery of Scotland is the place where you can look at the permanent exhibition of European art. The Royal Scottish Academy offers its visitors to enjoy the works by Monet, Titian and Gauguin. The Scottish National Portrait Gallery provides visitors  &hellip; <a href='http://www.orangesmile.com/travelguide/edinburgh/index.htm' class='noline'> Open <img src='http://www.orangesmile.com/img/2017/icon_next_16.png' class='lmenu-icon' title='Further'/></a>
+						</div>
+					</div>
+					
+					<div class='right-half'>
+						<h3 style='margin:0 0 10px 0'><a href='http://www.orangesmile.com/travelguide/edinburgh/luxhotels--2595386.htm'>Review of luxury hotels</a></h3>						
+						<div class='topic-digest'>
+							Chester Residence offers posh guest rooms and apartments in elegant classic style for its visitors. The apartment hotel will perfectly suit travelers who need accommodation for a long term. Every apartment comes with a fully equipped kitchen and a wide choice of home electronics, including a plasma TV with a collection of DVDs, iPod dock station, and other important devices. Chester Residence is an ideal variant for  &hellip; <a href='http://www.orangesmile.com/travelguide/edinburgh/luxhotels--2595386.htm' class='noline'> Open <img src='http://www.orangesmile.com/img/2017/icon_next_16.png' class='lmenu-icon' title='Further'/></a>
+						</div>
+					</div>
+					<div class='cl-b'></div>
+						
+			</div> <!--end bottom-fullwidth-->
+		
+			<div class='bottom-fullwidth'>
+				<h2 align='center'>Detailed maps of neighbouring cities to Edinburgh</h2>
+			
+				<div class='full-module' style='background-image: url(http://www.orangesmile.com/common/img_panorama_w980/gb-glasgow.jpg);'>
+					<a class='fill-div-with-link' href='http://www.orangesmile.com/travelguide/glasgow/high-resolution-maps.htm'></a>
+					<div class='caption-on-top'>
+						<div class='title-inside-caption'>
+							<a href='http://www.orangesmile.com/travelguide/glasgow/high-resolution-maps.htm'>Maps of Glasgow</a>
+						</div>
+						<div style='clear:both'></div>
+					</div>
+				</div>
+				
+				<div class='full-module' style='background-image: url(http://www.orangesmile.com/common/img_panorama_w980/gb-newcastle.jpg);'>
+					<a class='fill-div-with-link' href='http://www.orangesmile.com/travelguide/newcastle/high-resolution-maps.htm'></a>
+					<div class='caption-on-top'>
+						<div class='title-inside-caption'>
+							<a href='http://www.orangesmile.com/travelguide/newcastle/high-resolution-maps.htm'>Maps of Newcastle</a>
+						</div>
+						<div style='clear:both'></div>
+					</div>
+				</div>
+				
+				<div class='full-module' style='background-image: url(http://www.orangesmile.com/common/img_panorama_w980/gb-inverness.jpg);'>
+					<a class='fill-div-with-link' href='http://www.orangesmile.com/travelguide/inverness/high-resolution-maps.htm'></a>
+					<div class='caption-on-top'>
+						<div class='title-inside-caption'>
+							<a href='http://www.orangesmile.com/travelguide/inverness/high-resolution-maps.htm'>Maps of Inverness</a>
+						</div>
+						<div style='clear:both'></div>
+					</div>
+				</div>
+				
+				<div class='full-module' style='background-image: url(http://www.orangesmile.com/common/img_panorama_w980/gb-isle-of-man.jpg);'>
+					<a class='fill-div-with-link' href='http://www.orangesmile.com/travelguide/isle-of-man/high-resolution-maps.htm'></a>
+					<div class='caption-on-top'>
+						<div class='title-inside-caption'>
+							<a href='http://www.orangesmile.com/travelguide/isle-of-man/high-resolution-maps.htm'>Maps of Isle Of Man</a>
+						</div>
+						<div style='clear:both'></div>
+					</div>
+				</div>
+				
+				<div class='full-module' style='background-image: url(http://www.orangesmile.com/common/img_panorama_w980/gb-belfast.jpg);'>
+					<a class='fill-div-with-link' href='http://www.orangesmile.com/travelguide/belfast/high-resolution-maps.htm'></a>
+					<div class='caption-on-top'>
+						<div class='title-inside-caption'>
+							<a href='http://www.orangesmile.com/travelguide/belfast/high-resolution-maps.htm'>Maps of Belfast</a>
+						</div>
+						<div style='clear:both'></div>
+					</div>
+				</div>
+				
+				<div class='cl-b'></div>
+			</div> <!--end bottom-fullwidth-->
+		
+			
+		</div> <!--end main-->		
+				
+		
+		<script type="text/javascript">
+		
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-526321-1']);
+		  _gaq.push(['_trackPageview']);
+		  setTimeout("_gaq.push(['_trackEvent', '33_seconds', 'read'])",33000);
+		
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+
+
+		<script src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'></script>
+		<script src='//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js' type='text/javascript'></script>
+		<script type='text/javascript' src='//www.orangesmile.com/tmp/jquery_bold/js/jquery.plugins.combined.js'></script>
+		<script type='text/javascript' src='//www.orangesmile.com/tmp/lightbox2/src/js/lightbox.js'></script>
+		<script type='text/javascript' src='//www.orangesmile.com/travelguide/form.js'></script>
+		
+		<script type='text/javascript' src='//www.orangesmile.com/js/wowslider/city_full_900_500_90_synch_carousel_effect/engine1/wowslider.js'></script>
+		<script type='text/javascript' src='//www.orangesmile.com/js/wowslider/city_full_900_500_90_synch_carousel_effect/engine1/script.js'></script>
+		
+		<script src='//www.orangesmile.com/tmp/lang-switcher/js/jquery/jquery-polyglot.language.switcher.js' type='text/javascript'></script>
+		<script>
+			jQuery(document).ready(function ($) {
+				$('.polyglot-language-switcher').polyglotLanguageSwitcher()
+						.on('popupOpening', function(evt){
+							console.log(evt);
+						}).on('popupOpened', function(evt){
+							console.log(evt);
+						}).on('popupClosing', function(evt){
+							console.log(evt);
+						}).on('popupClosed', function(evt){
+							console.log(evt);
+						});
+			});
+			
+			$(function(){
+				// this will get the full URL at the address bar
+				var url = window.location.href; 
+			
+				// passes on every "a" tag 
+				$(".left-menu-container a").each(function() {
+						// checks if its the same on the address bar
+					if(url == (this.href)) { 
+						$(this).closest("li").addClass("active");
+					}
+				});
+			});
+		</script>		
+		<div align='left' class='gray-area'>
+			<div align='justify' style='float:left; width:380px; padding-right:80px;'>
+				<b>OrangeSmile.com</b> - online travel reservation expert providing reliable car rental and hotel booking services. We feature more than 25.000 destinations with 12.000 rental offices and 200.000 hotels worldwide.
+			</div>
+			
+			
+			
+			<div style='float:left; width:200px; padding-right:80px;'>
+				<b>Secure Server</b>
+				<br/>
+				<div style='float:left; margin-top:3px'>
+					<img src='http://www.orangesmile.com/img/godaddy-ssl-logo.png' />
+				</div>
+					<div style='float:left; margin-top:5px'>
+					<img src='http://www.orangesmile.com/img/thawte_logo.png' />
+				</div>
+			</div>
+			
+			<div style='float:left; width:200px; padding-right:0px;'>
+				 <b>Head office</b>
+				 <br/>
+				 Weegschaalstraat 3, Eindhoven
+				 <br/>  
+				 5632 CW, The Netherlands
+				 <br/> 
+				 +31 40 40 150 44
+			</div>
+			
+			<div style='clear:both'></div>
+			<br/>
+			<br/>
+			
+			
+			<div>
+				Copyright &copy; 2002 - 
+				<SCRIPT>
+				<!--
+				var year=new Date();
+				year=year.getYear();
+				if (year<1900) year+=1900;
+				document.write(year);
+				//-->
+				</SCRIPT> 
+				
+				OrangeSmile Tours B.V. | OrangeSmile.com | Under the direction and management of IVRA Holding B.V. - Registered at Kamer van Koophandel (KvK), The Netherlands No. 17237018
+
+			</div>
+	
+		</div>
+		
+	
+	</div> <!--end wrap-->
+	
+</body>
+</html>
+	
