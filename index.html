@@ -26,13 +26,15 @@
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit; 
+  margin: 0; 
 }
+
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: purple;
 }
+
 
 .dropdown-content {
   display: none;
@@ -43,6 +45,7 @@
   z-index: 1;
 }
 
+
 .dropdown-content a {
   float: none;
   color: purple;
@@ -52,9 +55,11 @@
   text-align: left;
 }
 
+
 .dropdown-content a:hover {
   background-color: #ddd;
 }
+
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -65,10 +70,16 @@
 
 
 body {
-	background: #663399;
+	background: #663399; 
 	margin: 0;
 }
-
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: rgb(107, 107, 132);
+}
 body {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 100%;
@@ -79,7 +90,18 @@ body {
 	background: white;
 	line-height: 1.8;
 }
-
+h1 {
+	font: 1.6em Verdana, Geneva, sans-serif;
+	margin-bottom: .4em;
+	color: rgb(83, 104, 138);
+}
+h2 {
+	font: 3.2em Georgia, "Times New Roman", Times, serif;
+	margin-bottom: .2em;
+}
+h3 {
+	font-size: 1.2em;
+}
 p {
 	margin-bottom: 1em;
 }
@@ -101,6 +123,87 @@ pre {
 	white-space: -o-pre-wrap;
 	word-wrap: break-word;
 	width: 80%;
+}
+pre.wrong {
+	border-left-color: red;
+}
+pre.correct {
+	border-left-color: green;
+}
+dt {
+	font-style: italic;
+	font-size:1.2em;
+}
+dd {
+	margin-bottom: 1.4em;
+}
+table {
+	margin-top: 1em;
+}
+caption {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1em;
+	text-align: left;
+}
+td, th {
+	padding: 10px;
+}
+.center {
+	text-align: center;
+}
+header h2 {
+	padding-bottom: .2em;
+	border-bottom: 1px solid gray;
+}
+aside {
+	padding: 1em;
+	background:rgb(83, 104, 138);
+	color: white;
+	margin-bottom: 1em;
+}
+aside h4 {
+	color: white;
+}
+footer {
+	border-top: 1px solid gray;
+	text-align: center;
+	font-size: .8em;
+	line-height: 4em;
+	margin-top: 1em;
+}
+blockquote {
+	font-style: italic;
+}
+.flowRight {
+	float: right;
+	margin-left: 10px;
+}
+.flowLeft {
+	float: left;
+	margin-right: 10px;
+}
+
+aside.languages {
+	font: .8em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background:#2e2e2e;
+	padding: 25px;
+	padding-top: 1em;
+	float: right;
+	width: 500px;
+	margin-left: 1em;
+}
+
+.languages h3 {
+	font-weight: normal;
+	color: white;
+	font-size: 1.6em;
+	margin-bottom:.5em;
+}
+
+#tabContainer h4 {
+	color: rgb(83, 104, 138);
+	font-size: 2em;
 }
 
 #tabs{
@@ -134,7 +237,7 @@ pre {
 }
 
 #tabs > ul > .active{
-	background: white; /* old browsers */
+	background: white;
 	cursor:pointer;
 }
 
