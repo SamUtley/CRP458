@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta name="description" content="Sam's map" - 2020">
+    <meta name="description" content="LA/CRP 458/558 Leaflet starter file - 2020">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Getting Started with Leaflet</title>
@@ -25,26 +25,13 @@
 
 <body>
     <div id='map'></div>
-<br>
-Pan to <a href = "javascript:frasier()">Azteca</a><br>
-<a href = "#" id='zoomOut'>Zoom out</a><br>
-<button id="zoomIn">Zoom In</button>
+    
+    <br>Pan to <a href="javascript:adaHayden()">Ada Hayden Park</a><br>
 
-<script>
-function frasier() {
-	map.panTo(new L.LatLng(42.067378, -93.626682));
-}
+    <a href="javascript:zoomOut()">Zoom out to see Ankeny</a><br>
 
-$("#zoomOut").click(function(){
-	map.setZoom(8);
-});
+    <button id="campusBtn">Zoom into Campus</button>
 
-$("zoomIn").click(function(){
-	map.setView(new L.LatLng(42.026328, -93.646539, 4);
-});
-</script>
-
-</body>
 
     <script>
         var map = L.map('map').setView([42.033412, -93.640523], 13);
@@ -60,21 +47,46 @@ $("zoomIn").click(function(){
         L.marker([42.033412, -93.640523]).addTo(map)
             .bindPopup("My Apartment")
             .openPopup();
-    
-var locations = [
+   
+  //----------Adding multiple town markers----------
+
+        //an array of towns
+        var locations = [
 	[42.049993, -93.645557, "My Favorite Restaurant"],
 	[42.028536, -93.653208, "The College of Design"],
 	[42.067378, -93.626682, "My Favorite Spot in Ames"],
-	[41.750593, -93.612237, "My House"]
-];
+	[41.750593, -93.612237, "My House"],
+        ];
 
-for (var i = 0; i < locations.length; i++) {
-	marker =  new L.marker([locations[i][0], locations[i][1]])
-	.bindPopup(locations[i][2])
-	.addTo(map);
-}
+        //loop through the array and add a marker for each
+        for (var i = 0; i < locations.length; i++) {
+            marker = new L.marker([locations[i][0], locations[i][1]])
+                .bindPopup(locations[i][2])
+                .addTo(map);
+        }
 
-	</script>
+
+        //----------Links below the Map----------
+
+        //Pan to Frasier, IA
+        function adaHayden() {
+            map.panTo(new L.LatLng(42.067378, -93.626682));
+        }
+
+        //set Zoom
+        function zoomOut() {
+            map.setZoom(9);
+        };
+
+
+        //add an event listener for a click event on the button
+        document.getElementById("campusBtn").addEventListener("click", campus);
+
+        //Goldfield Iowa function
+        function campus() {
+            map.setView(new L.LatLng(42.026328, -93.646539), 17);
+        };    
+    </script>
 
 </body>
 </html>
