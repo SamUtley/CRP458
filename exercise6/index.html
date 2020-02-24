@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<style>#map {
+     width: 500px;
+     height: 400px;
+}
+</style>
+<head>
+<meta name="description" content="Sams leaflet map">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sams Leaftlet Map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" /> 
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+	
+</head>
+<body>
+<div id='map'></div>
+This is a map showing multiple areas in Ames.
+
+</body>
+
+<script>
+var map = L.map('map').setView([42.033386, -93.640463], 13);
+    
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+ attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+     accessToken: 'pk.eyJ1Ijoic3J1dGxleSIsImEiOiJjazZzbXl4NTAwMzR3M2xxcTBldzMwMGpiIn0.0uWjERAVr7dHtdvaAArftg' 
+        }).addTo(map);
+L.marker([42.033386, -93.640463]).addTo(map)
+   .bindPopup("My Apartment");
+
+
+ L.circle([42.013876, -93.635770], {
+	radius: 200,
+	fill: true,
+	color: '#40e0d0',
+	fillColor: '#40e0d0',
+	fillOpacity: 0.8
+ }).bindPopup("Jack Trice Stadium").addTo(map); 
+
+
+var exampleMarker = new L.circleMarker([42.026328, -93.646539], {
+    radius: 30,
+	fillColor: 'red',
+	color: "yellow",
+	weight: 2,
+	opacity: 1,
+	fillOpacity: 0.9    
+}).bindPopup("Iowa State's Campus").addTo(map);
+    
+var latlngs = [[42.033415, -93.640479], [42.033387, -93.644734], [42.030500, -93.644646],[42.030376, -93.651903],[42.028494, -93.651896]]; 
+var polyline = L.polyline(latlngs, {color: 'purple'}).addTo(map);
+
+
+var latlngs = [[42.026963, -93.610471],[42.026987, -93.608797],[42.025969, -93.608745],[42.025951, -93.610450]]; 
+var polygon = L.polygon(latlngs, {
+	fill: true,
+	color: 'green',
+	fillColor: 'lightgreen',
+	fillOpacity: 0.8
+ }).addTo(map);
+    
+</script>
+
+</html>
