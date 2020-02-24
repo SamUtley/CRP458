@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-
-
-<head>
 <style>
 .navbar {
   overflow: hidden;
@@ -75,6 +72,9 @@
 }
 </style>
 
+<head>
+
+
 <meta name="description" content="Sams leaflet map">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -82,6 +82,23 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" /> 
 <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 
+<div class="navbar">
+  <a href="https://samutley.github.io/CRP458/">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Exercises
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://samutley.github.io/CRP458/exercise1/">Exercise 1</a>
+      <a href="https://samutley.github.io/CRP458/exercise2/">Exercise 2</a>
+      <a href="https://samutley.github.io/CRP458/exercise3/Traffic_Camera_Locations.geojson/">Exercise 3</a>
+	<a href="https://samutley.github.io/CRP458/exercise4/Iowa_Map/">Exercise 4</a>
+	<a href="https://samutley.github.io/CRP458/exercise5/exercise5.html">Exercise 5</a>
+	<a href="https://samutley.github.io/CRP458/exercise6/">Exercise 6</a>
+	    
+    </div>
+  </div>
+</div>
 	
 </head>
 <body>
@@ -91,6 +108,8 @@ This is a map showing multiple areas in Ames.
 </body>
 
 <script>
+
+	
 var map = L.map('map').setView([42.033386, -93.640463], 13);
     
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
