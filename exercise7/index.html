@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: purple;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  float: none;
+  color: purple;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+	#map {
+     width: 500px;
+     height: 400px;
+}
+</style>
+
+<head>
+
+
+<meta name="description" content="Sams leaflet map">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sams Leaftlet Map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" /> 
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+<div class="navbar">
+  <a href="https://samutley.github.io/CRP458/">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Exercises
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://samutley.github.io/CRP458/exercise1/">Exercise 1</a>
+      <a href="https://samutley.github.io/CRP458/exercise2/">Exercise 2</a>
+      <a href="https://samutley.github.io/CRP458/exercise3/Traffic_Camera_Locations.geojson/">Exercise 3</a>
+	<a href="https://samutley.github.io/CRP458/exercise4/Iowa_Map/">Exercise 4</a>
+	<a href="https://samutley.github.io/CRP458/exercise5/exercise5.html">Exercise 5</a>
+	<a href="https://samutley.github.io/CRP458/exercise6/">Exercise 6</a>
+	    
+    </div>
+  </div>
+</div>
+	
+</head>
+<body>
+<div id='map'></div>
+This is a map showing multiple areas in Ames.
+
+</body>
+
+<script>
+
+	
+var map = L.map('map').setView([42.033386, -93.640463], 13);
+    
+var base = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+ attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+     accessToken: 'pk.eyJ1Ijoic3J1dGxleSIsImEiOiJjazZzbXl4NTAwMzR3M2xxcTBldzMwMGpiIn0.0uWjERAVr7dHtdvaAArftg' 
+        }).addTo(map);
+L.marker([42.033386, -93.640463]).addTo(map)
+   .bindPopup("My Apartment");
+
+var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+
+var circle = new L.circle([42.013876, -93.635770], {
+	radius: 200,
+	fill: true,
+	color: '#40e0d0',
+	fillColor: '#40e0d0',
+	fillOpacity: 0.8
+ }).bindPopup("Jack Trice Stadium").addTo(map); 
+
+
+var marker = new L.circleMarker([42.026328, -93.646539], {
+    radius: 30,
+	fillColor: 'red',
+	color: "yellow",
+	weight: 2,
+	opacity: 1,
+	fillOpacity: 0.9    
+}).bindPopup("Iowa State's Campus").addTo(map);
+    
+
+
+var nexrad = L.tileLayer.wms("http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi", {
+    layers: 'nexrad-n0r-900913',
+    format: 'image/png',
+    transparent: true,
+    attribution: "Weather data © 2012 IEM Nexrad"
+});
+
+var baseLayers = {
+    "base": base,
+    "OpenStreetMap": OpenStreetMap_Mapnik
+
+};
+var overlays = {
+    "Marker": marker,
+    "Circle Marker": circle,
+    "Weather": nexrad
+};
+L.control.layers(baseLayers, overlays).addTo(map);
+    
+</script>
+
+</html>
