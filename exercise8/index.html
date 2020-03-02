@@ -15,6 +15,7 @@
 
 <script src="../geojson/PublicAreas.geojson"></script>
 <script src="../geojson/RecreationalTrails.geojson"></script>
+<script src="../geojson/us_cities.geojson"></script>
     
     <style>
         #map {
@@ -42,6 +43,7 @@
         
         L.geoJSON(Public_Areas).addTo(map);
         L.geoJSON(Recreational_Trails).addTo(map);
+        L.geoJSON(cities).addTo(map);
 
         L.marker([42.00185, -93.63474]).addTo(map)
             .bindPopup("My Office Location")
