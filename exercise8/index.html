@@ -13,8 +13,8 @@
         integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
         crossorigin=""></script>
 
-    <script src="../geojson/Public Areas.geojson"></script>
-    <script src="../geojson/Recreational Trails in Iowa.geojson"></script>
+    <script src="../geojson/Public_Areas.geojson"></script>
+    <script src="../geojson/Recreational_Trails.geojson"></script>
     
     <style>
         #map {
@@ -40,7 +40,7 @@
             accessToken: 'pk.eyJ1Ijoic3J1dGxleSIsImEiOiJjazZzbXl4NTAwMzR3M2xxcTBldzMwMGpiIn0.0uWjERAVr7dHtdvaAArftg' 
         }).addTo(map);
         
-        L.geoJSON(publicAreas).addTo(map);
+        L.geoJSON(PublicAreas).addTo(map);
         L.geoJSON(RecreationalTrails).addTo(map);
 
         L.marker([42.00185, -93.63474]).addTo(map)
