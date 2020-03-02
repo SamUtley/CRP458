@@ -1,0 +1,154 @@
+{
+ "currentVersion": 10.51,
+ "id": 0,
+ "name": "Iowa DNR Fishing Report Waterbodies",
+ "type": "Feature Layer",
+ "description": "Lake and pond centroids derived from various sources including USGS GNIS, Iowa Lakes Water Quality Program, and NWI.",
+ "geometryType": "esriGeometryPoint",
+ "sourceSpatialReference": {
+  "wkid": 26915,
+  "latestWkid": 26915
+ },
+ "copyrightText": "Iowa Department of Natural Resources Fisheries Bureau",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 0,
+ "maxScale": 0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "simple",
+   "symbol": {
+    "type": "esriPMS",
+    "url": "8aa95f1521f6906c252d7512c8c2ff8d",
+    "imageData": "iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAPNJREFUGJVjYUAF/AxO/nYMnDycDFv3XWFgeH4NJsECYwgFZsV/VdEq+ikgosfAwMDAYOz6muHRrVUMC9rKGRgYvkIU+qf4vtM1m8TAzsEHN5udQ5RBVS+bIbGGhWF+SwZEoYxqGooiZCCjEslg4DAdopCTQwerIgYGBgYODj4hLX0rmBv/4FTIwMDA8PP3H4jCr1/PMQgyqGBV9Pn9m3dP3qyDKHzzsJ6Bh9eWQUBUEtWkH//YXzzu/3ly1VuIwtUzbzBEFbkxfP3SzcDFa8nAyMjJ8OvnTaEv76a+W9A2k4EBKRwZlvVdYWBg8EQ28B0SGwDoZkM8uJWjwgAAAABJRU5ErkJggg==",
+    "contentType": "image/png",
+    "width": 7,
+    "height": 7,
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0
+   },
+   "label": "",
+   "description": ""
+  },
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "defaultVisibility": true,
+ "extent": {
+  "xmin": -1.0756896100892678E7,
+  "ymin": 4916354.514006166,
+  "xmax": -1.0027893945121802E7,
+  "ymax": 5396977.3226227,
+  "spatialReference": {
+   "wkid": 102100,
+   "latestWkid": 3857
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeNone",
+ "displayField": "WATERBODYNAME",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "fields": [
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null
+  },
+  {
+   "name": "SHAPE",
+   "type": "esriFieldTypeGeometry",
+   "alias": "Shape",
+   "domain": null
+  },
+  {
+   "name": "EASTING",
+   "type": "esriFieldTypeDouble",
+   "alias": "EASTING",
+   "domain": null
+  },
+  {
+   "name": "NORTHING",
+   "type": "esriFieldTypeDouble",
+   "alias": "NORTHING",
+   "domain": null
+  },
+  {
+   "name": "HYDROGRAPHYID",
+   "type": "esriFieldTypeDouble",
+   "alias": "HYDROGRAPHYID",
+   "domain": null
+  },
+  {
+   "name": "WATERBODYNAME",
+   "type": "esriFieldTypeString",
+   "alias": "WATERBODYNAME",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "hydrographyName",
+   "type": "esriFieldTypeString",
+   "alias": "hydrographyName",
+   "length": 80,
+   "domain": null
+  },
+  {
+   "name": "dateCreated",
+   "type": "esriFieldTypeDate",
+   "alias": "dateCreated",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "code",
+   "type": "esriFieldTypeString",
+   "alias": "code",
+   "length": 9,
+   "domain": null
+  }
+ ],
+ "indexes": [
+  {
+   "name": "FDO_OBJECTID",
+   "fields": "OBJECTID",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "FDO_SHAPE",
+   "fields": "SHAPE",
+   "isAscending": true,
+   "isUnique": false,
+   "description": ""
+  }
+ ],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 1000,
+ "supportsStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportedQueryFormats": "JSON, AMF, geoJSON",
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsPagination": true,
+  "supportsTrueCurve": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": false
+ },
+ "supportsDatumTransformation": true,
+ "dateFieldsTimeReference": null
+}
