@@ -1,23 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta name="description" content="LA/CRP 458/558 Leaflet starter file - 2020">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Getting Started with Leaflet</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-        crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-        crossorigin=""></script>
-
-<script src="../geojson/PublicAreas.geojson"></script>
-<script src="../geojson/RecreationalTrails.geojson"></script>
-<script src="../geojson/uscities.geojson"></script>
-    
-    <style>
+<style>
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -90,7 +73,42 @@
         }
         
     </style>
+<head>
+    <meta name="description" content="LA/CRP 458/558 Leaflet starter file - 2020">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Getting Started with Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
 
+<script src="../geojson/PublicAreas.geojson"></script>
+<script src="../geojson/RecreationalTrails.geojson"></script>
+<script src="../geojson/uscities.geojson"></script>
+    
+    
+
+  <div class="navbar">
+  <a href="https://samutley.github.io/CRP458/">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Exercises
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://samutley.github.io/CRP458/exercise1/">Exercise 1</a>
+      <a href="https://samutley.github.io/CRP458/exercise2/">Exercise 2</a>
+      <a href="https://samutley.github.io/CRP458/exercise3/Traffic_Camera_Locations.geojson/">Exercise 3</a>
+	<a href="https://samutley.github.io/CRP458/exercise4/Iowa_Map/">Exercise 4</a>
+	<a href="https://samutley.github.io/CRP458/exercise5/exercise5.html">Exercise 5</a>
+	<a href="https://samutley.github.io/CRP458/exercise6/">Exercise 6</a>
+	    
+    </div>
+  </div>
+</div>  
+    
 </head>
 
 <body>
