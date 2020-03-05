@@ -204,11 +204,11 @@ var legend = L.control({
   	colors = [0, 50, 200, 500, 1000],
   	labels = [];
   
- for (var i = 0; i < colors.length; i++) {
-    div.innerHTML +=
-      '<i style="background:' + getColor(colors[i]) + ' "></i> ' +
-      colors[i] + (colors ? '' + '<br>' : '');
- }
+    for (var i = 0; i < colors.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColor(colors[i] + 1) + '"></i> ' +
+            colors[i] + (colors[i + 1] ? '&ndash;' + colors[i + 1] + '<br>' : '+');
+    }
 
   return div;
 };
