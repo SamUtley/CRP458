@@ -188,17 +188,17 @@ var legend = L.control({
   position: 'bottomleft'
  });
  
- legend.onAdd = function(map) {
+legend.onAdd = function(map) {
 
   var div = L.DomUtil.create('div', 'info legend'),
-  	colors = [0, 50, 200, 500, 1000],
-  	labels = [];
-  
-    for (var i = 0; i < colors.length; i++) {
-        div.innerHTML +=
-            '<i style="background:' + getColor(colors[i] + 1) + '"></i> ' +
-            colors[i] + (colors[i + 1] ? '&ndash;' + colors[i + 1] + '<br>' : '+');
-    }
+    breakfast = ['apple', 'banana', 'cereal', 'donuts', 'eggs']
+
+  // loop through items and generate a label with a colored square for each
+  for (var i = 0; i < breakfast.length; i++) {
+    div.innerHTML +=
+      '<i style="background:' + getColor(breakfast[i]) + ' "></i> ' +
+      breakfast[i] + (breakfast ? '' + '<br>' : '');
+  }
 
   return div;
 };
