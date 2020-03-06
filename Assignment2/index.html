@@ -182,7 +182,7 @@ var base =        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{
   
 
 var states =	L.geoJson(statesData, {style: style}).addTo(map);
-var cities = 	L.geoJson(uscities, {setRadius: 5}).addTo(map);
+var cities = 	L.geoJson(uscities, {setRadius: 20}).addTo(map);
 	
 	map.attributionControl.addAttribution('Population data &copy; <a href="http://census.gov/">US Census Bureau</a>');
 
