@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+<!--- This head section is setting up the style of the page first in CSS,
+Then it is creating a navigation bar at the top of the page to link to other webpages -->
 
-	
 <head>
 	<style>
 	.navbar {
@@ -106,9 +107,13 @@
 .info h4 {
     margin: 0 0 5px;
     color: #777;
-}        
+}  
+.img {
+    width: 200px
+    height: 100px
+        }
     </style>
-	<title>Choropleth Tutorial - Leaflet</title>
+	<title>Assignment 2</title>
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -133,23 +138,39 @@
 	<a href="https://samutley.github.io/CRP458/exercise7/">Exercise 7</a>
 	<a href="https://samutley.github.io/CRP458/exercise8/">Exercise 8</a>
 	<a href="https://samutley.github.io/CRP458/exercise9/">Exercise 9</a>
+    <a href="https://samutley.github.io/CRP458/exercise10/">Exercise 10</a>
 	    
     </div>
   </div>
 </div>	
 
 </head>
-
+<!--- This body section contians the text shown on the webpage, 
+including the two headers and the block of text, along with the map -->
 <body>
+    
+<h1> US Population and Density</h1>
+<h2> Comparing State Population Density with City Population</h2>
 
-<div id='map'></div>
+<div id='map' style="float:left";></div>
+<p style="text-align: center">The United States has a population of 327.2 million people. While this is a large number, the United States also has a massive quantiity of land that helps to space out its population. But, as this map shows, the American population is not evenly spcaed out. People tend to live amongts other people and form points of large gatherings, cities. This map shows the population density of each state, along with the 5 most populated US cities using greaduated symbols to vidualize thier respective populations. Click on each city to see the city name and total population. 
+    <br> <!--- Below are two buttons that will be coded to zoom inot certain coordinates on the map -->
+If you would like to zoom into the most populatied city in the United States, click here: <button id="newYorkBtn">The Most Populated City</button>
+    <br>
+If you would like to zoom into the most dense state in the United States, click here: <button id="newJerseyBtn">The Most Dense State</button> <br>
 
+The most populated city in Aemrica is New York City. Below is a graph showing the population growth of New York City in recent years in terms of millions of people.
+ <!--- This is inserting a picture into the webpage from file search-->   
+<img style = "width: 350px; height: 250px"; src="../images/newyork.png"></p>
+
+
+ <!--- This is using file search to call geojson data that will be used in the map-->   
 <script type="text/javascript" src="../geojson/usstates.js"></script>
 <script src="../geojson/uscities.geojson"></script>
 
-	
+<!--- The rest of this page is in JavaScript and is controlling the behavior of the webpage and map-->	
 <script type="text/javascript">
-
+/* The begining of this script I set up a map variable with a couple basemaps */
         var map = L.map('map').setView([37.8, -96], 4);
 
 var base =        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -159,8 +180,13 @@ var base =        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{
             // This is a unique access token, you must register for your own from https://account.mapbox.com/access-tokens/
             accessToken: 'pk.eyJ1Ijoic3J1dGxleSIsImEiOiJjazZzbXl4NTAwMzR3M2xxcTBldzMwMGpiIn0.0uWjERAVr7dHtdvaAArftg' 
         }).addTo(map);
+    
+var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
 
-	// get color depending on population density value
+/* I then create a few functions that will be used to loop through features on my geojson files inorder to assign color */
 	function getColor(d) {
 		return d > 1000 ? '#253494' :
 				d > 500  ? '#2c7fb8' :
@@ -180,23 +206,57 @@ var base =        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{
 		};
 	}
   
+  // here I am setting up my own point layer with different attribute information   
+var states =	L.geoJson(statesData, {style: style}).addTo(map);   
+var myPoints = [
+  ["8175133", 40.6635, -73.9387, "New York"],
+  ["3792621", 34.0194, -118.4108, "Los Angeles"],
+  ["2695598", 41.8376, -87.6818, "Chicago"],
+  ["2100263", 29.7866, -95.3909, "Houston"],
+  ["1660272", 33.5722, -112.0901, "Pheonix"],
+];
 
-var states =	L.geoJson(statesData, {style: style}).addTo(map);
-var cities = 	L.geoJson(uscities, {setRadius: 20}).addTo(map);
+function getCol(d) {
+  return d == 'New York' ? '#D4AF37' :
+    d == 'Los Angeles' ? "#000080" :
+    d == 'Chicago' ? "#FF0000" :
+    d == 'Houston' ? "#8B0000" :
+    d == 'Pheonix' ? "#FFFF00" :
+    "#000000"; //white
+}
+    
+// Here I am assigning a color and radius to eah point, as well as turning them into markers
+var citylayer = L.layerGroup([]);
+for (var i = 0; i < myPoints.length; i++) {
+  marker = new L.circleMarker([myPoints[i][1], myPoints[i][2]], {
+      radius: myPoints[i][0] / 200000 + 5,
+      fillColor: getCol(myPoints[i][3]),
+      color: "#000",
+      weight: 0,
+      opacity: 1,
+      fillOpacity: 0.9
+    })
+    .bindPopup("City: " + myPoints[i][3] + "," + " Population: " + myPoints[i][0]) //note there is no comma here
+    .addTo(citylayer);
+      citylayer.addTo(map);
+}    
+    
+
 	
 	map.attributionControl.addAttribution('Population data &copy; <a href="http://census.gov/">US Census Bureau</a>');
-
+// Here I am creating two variables, baselayers and overlays, that I will use for my layer control
 var baseLayers = {
-    "base": base
+    "base": base,
+    "OpenStreetMap": OpenStreetMap_Mapnik
 
 };
 var overlays = {
     "States": states,
-    "Cities": cities,
+    "Cities": citylayer,
 };
 L.control.layers(baseLayers, overlays).addTo(map);
    
-   
+//Here I am creating legends for both my overlay layers   
 var legend = L.control({
   position: 'bottomleft'
  });
@@ -206,8 +266,8 @@ legend.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'info legend'),
         color = [0, 50, 100, 200, 500, 1000],
         labels = [];
-
-    // loop through our density intervals and generate a label with a colored square for each interval
+        
+    div.innerHTML += "<b>States</b><br>";
     for (var i = 0; i < color.length; i++) {
         div.innerHTML +=
             '<i style="background:' + getColor(color[i] + 1) + '"></i> ' +
@@ -217,6 +277,62 @@ legend.onAdd = function (map) {
     return div;
 };
 legend.addTo(map);
+    
+    var legend2 = L.control({
+  position: 'bottomleft'
+});
+
+legend2.onAdd = function(map) {
+
+  var div = L.DomUtil.create('div', 'info legend'),
+    city = ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Pheonix'],
+    labels = [''];
+
+	 div.innerHTML += "<b>Cities</b><br>";
+  for (var i = 0; i < city.length; i++) {
+    div.innerHTML +=
+      '<i style="background:' + getCol(city[i]) + ' "></i> ' +
+      city[i] + (city ? '' + '<br>' : '');
+  }
+
+  return div;
+};
+legend2.addTo(map);
+
+
+
+//This is the code that controls the buttons I made in my html body 
+
+
+document.getElementById("newYorkBtn").addEventListener("click", newyork);
+
+        function newyork() {
+            map.setView(new L.LatLng(40.6635, -73.9387), 10);
+        };  
+ document.getElementById("newJerseyBtn").addEventListener("click", newjersey);
+
+        function newjersey() {
+            map.setView(new L.LatLng(40.118633, -74.441468), 7);
+        };
+    
+// This controls the legends turning on and off with the layer
+map.on('overlayremove', function (eventLayer) {
+	console.log(eventLayer.name  + " off");
+	if (eventLayer.name == "States") {
+		this.removeControl(legend);
+	}else if (eventLayer.name == "Cities"){
+		this.removeControl(legend2);
+	}
+});
+
+map.on('overlayadd', function (eventLayer) {
+	console.log(eventLayer.name + " on");
+	if (eventLayer.name == "States") {
+		 legend.addTo(this);
+	}else if (eventLayer.name == "Cities"){
+		 legend2.addTo(this);
+	}	
+});
 </script>
 
 </body>
