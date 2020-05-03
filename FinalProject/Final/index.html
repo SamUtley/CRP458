@@ -83,7 +83,7 @@
 	  
 
 
- #map { width: 800px; height: 500px; z-index:0; margin: 0; padding: 0; }
+ #map { width: 650px; height: 400px; z-index:0; margin-left: 10px; padding: 20px; float: left}
 
 	.legend {
     line-height: 10px;
@@ -107,6 +107,58 @@
     margin: 0 0 5px;
     color: #777;
 }        
+        
+#changestyle {
+  background-color: #CC99FF;
+  border: none;
+  color: white;
+  padding: 20px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+    border-radius: 8px;
+    border: 2px solid grey;
+    float: center;
+    margin: 2px
+}
+#changestyle:hover {
+  background-color: purple;
+  color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#OzoneStyle {
+  background-color: #CC99FF;
+  border: none;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+    border-radius: 8px;
+    border: 2px solid grey;
+    float: left;
+    margin: 2px
+}
+#OzoneStyle:hover {
+  background-color: purple;
+  color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#body {
+            background-color:azure
+        }
+        
+        #h1 {
+            margin-left: 10px
+        }
+        #par1 {
+            float: right;
+            margin-right: 50px
+        }
+        
+
     </style>
 	<title>Choropleth Tutorial - Leaflet</title>
 
@@ -140,14 +192,18 @@
 
 </head>
 
-<body>
+<body id= 'body'>
+<h1 id=h1>Air Quality Data in Iowa and Illinois</h1>
 
 <div id='map'></div>
-
+<div id =par1>
+    <h2> Air Quality</h2><p id=par2> This is where the tect will go and when it gets long I will add <br> breaks</p></div>
+<button id="changestyle">Good Days</button><br>
+<button id="OzoneStyle">Ozone</button>
 
 <script src="https://unpkg.com/esri-leaflet/dist/esri-leaflet.js"></script>
-<script src="../Iowa2.geojson"></script>	
-<script src="../Illinois2.geojson"></script>
+<script src="../IowaAQIdata.geojson"></script>	
+<script src="../IllinoisAQIdata.geojson"></script>
 <script type="text/javascript">
 
         var map = L.map('map').setView([40.384255, -91.488978], 6);
@@ -166,35 +222,103 @@ var base =        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{
 		};
 	} */
 
-function getColor(d) {
+    
+//Setting up styles
+//Set up colors
+    
+//Set up colors for MedianAQI data
+    
+function MedAQIcolor(d) {
 		return d < 10 ? '#006600' :
-				d < 20  ? '#00FF00' :
-				d < 30  ? '#FFFF00' :
-				d < 40   ? '#FF3333' :
-				d < 50   ? '#8B0000' :
-							'#000000';
+				d < 20  ? '#009900' :
+				d < 30  ? '#00CC00' :
+				d < 40   ? '#00FF00' :
+				d < 50   ? '#99FF00' :
+							'#FF9900';
 	}
 
-	function style(feature) {
+//Set up colors for percent data where low = bad, high = good
+
+function getPercent(d) {
+		return d < 20 ? '#8B0000' :
+				d < 40  ? '#FF9900' :
+				d < 60  ? '#FFFF00' :
+				d < 80   ? '#00FF00' :
+				d < 100   ? '#006600' :
+							'#003300';
+	}
+
+//Set up colors for percent data where low = good, high = bad
+
+function getPercent2(d) {
+		return d < 20 ? '#003300' :
+				d < 40  ? '#006600' :
+				d < 60  ? '#00FF00' :
+				d < 80   ? '#FFFF00' :
+				d < 100   ? '#FF9900' :
+							'#8B0000';
+	}  
+    
+    
+//Set up radius
+    
+/*function radiusstyle(n){
+    return{n/5};
+}*/
+    
+//Set up styles  
+
+//MedianAQI Style
+function style(feature) {
 		return {
 			weight: 1,
 			opacity: 1,
 			color: 'white',
 			fillOpacity: 0.7,
-			fillColor: getColor(feature.properties["Median AQI"])
+			fillColor: MedAQIcolor(feature.properties.MedianAQI)
 		};
 	}
     
     
-var iowa = L.geoJson(iowageo,{
+ //Percent Good Days Style   
+   var PercentStyle =  function newStyle(feature) {
+    return {
+	weight: 1,
+			opacity: 1,
+			color: 'black',
+			fillOpacity: 1,
+			fillColor: getPercent(feature.properties.PercentGoodDays),
+            radius: (feature.properties.PercentGoodDays)/5
+            
+		};
+	}
+    
+    // var popup; 
+   //Ozone Style
+   var OzoneStyle =  function newStyle(feature) {
+    return {
+	weight: 1,
+			opacity: 1,
+			color: 'black',
+			fillOpacity: 1,
+			fillColor: getPercent2(feature.properties.PercentDaysOzone),
+            radius: (feature.properties.PercentDaysOzone)/5
+            //feature.bindPopup(popup)
+		};
+	}
+   
+   
+   
+//Creating geojson file and legend variables
+    
+//var popup;
+//var popup1 = illinois.bindPopup('hi');
+  //  .setContent(feature.properties.PercentDaysOzone);
+    
+   var iowa = L.geoJson(iowageo,{
                     pointToLayer: function(feature, latlng){
-                        return L.circleMarker(latlng, {radius: 8, 
-                        fillOpacity: 1, 
-                        color: 'black', 
-                        fillColor: getColor(feature.properties.MedianAQI), 
-                        weight: 1,});
-                    
-    }
+                        return L.circleMarker(latlng, style)
+                    }
 }).addTo(map);   
 
     
@@ -203,18 +327,83 @@ var illinois = L.geoJson(illinoisgeo,{
                         return L.circleMarker(latlng, {radius: 8, 
                         fillOpacity: 1, 
                         color: 'black', 
-                        fillColor: getColor(feature.properties.MedianAQI), 
+                        fillColor: MedAQIcolor(feature.properties.MedianAQI), 
                         weight: 1,});
     }
 }).addTo(map);
+    
+
+var legend = L.control({
+  position: 'bottomleft'
+ });
+    
+
+    
+//Creating buttons
+    
+//Good Days Button
+document.getElementById("changestyle").addEventListener("click", newstylefunction);
+        function newstylefunction() {
+                    illinois.setStyle(PercentStyle);
+                    iowa.setStyle(PercentStyle);
+            var text = "good days info laaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaa <br> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaa a a <br> lalalallalalalalalalal <be> lalalallal";
+            document.getElementById("par2").innerHTML = text;
+            
+            
+            
+
+            //Good Days Legend   
+    legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        color = [0, 20, 40, 60, 80, 100];
+        
+    div.innerHTML += "<b>Percent Good Days</b><br>";
+    for (var i = 0; i < color.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getPercent(color[i] + 1) + '"></i> ' +
+            color[i] + (color[i + 1] ? '&ndash;' + color[i + 1] + '<br>' : ' ');
+    }
+
+    return div;
+};
+legend.addTo(map); 
+        };
+    
+//Ozone Button  
+document.getElementById("OzoneStyle").addEventListener("click", ozonestylefunction);
+        function ozonestylefunction() {
+                    illinois.setStyle(OzoneStyle);
+                  //  illinois.bindPopup(popup1);
+                   /* onEachFeature: function (feature, layer) {
+         layer.bindPopup('hi');
+     }*/
+
+            //Ozone Legend    
+    legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        color = [20, 40, 60, 80, 100];
+        
+    div.innerHTML += "<b>Percent Days With Ozone</b><br>";
+    for (var i = 0; i < color.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getPercent2(color[i] + 1) + '"></i> ' +
+            color[i] + (color[i + 1] ? '&ndash;' + color[i + 1] + '<br>' : '+');
+    }
+
+    return div;
+};
+legend.addTo(map); 
+        };
 	
 	//map.attributionControl.addAttribution('Population data &copy; <a href="http://census.gov/">US Census Bureau</a>');
 
 
 
     
-    
-    var baseLayers = {
+//Create layer control   
+var baseLayers = {
     "base": base
 
 };
@@ -223,8 +412,10 @@ var overlays = {
     "Illinois": illinois
 };
 L.control.layers(baseLayers, overlays).addTo(map);
-   
+    
 
+
+//still need to add legend control, iowa data,
 
 </script>
 
