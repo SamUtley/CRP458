@@ -146,11 +146,11 @@
 
 
 <script src="https://unpkg.com/esri-leaflet/dist/esri-leaflet.js"></script>
-<script src="../Iowa.geojson"></script>	
-<script src="../Illinois.geojson"></script>
+<script src="Iowa2.geojson"></script>	
+<script src="Illinois2.geojson"></script>
 <script type="text/javascript">
 
-        var map = L.map('map').setView([42.023269, -93.626378], 7);
+        var map = L.map('map').setView([40.384255, -91.488978], 6);
 
 var base =        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -160,23 +160,61 @@ var base =        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{
             accessToken: 'pk.eyJ1Ijoic3J1dGxleSIsImEiOiJjazZzbXl4NTAwMzR3M2xxcTBldzMwMGpiIn0.0uWjERAVr7dHtdvaAArftg' 
         }).addTo(map);
 
+  /*  function radius(feature) {
+		return {
+			radius:(feature.properties["Median AQI"])/5
+		};
+	} */
 
+function getColor(d) {
+		return d < 10 ? '#006600' :
+				d < 20  ? '#00FF00' :
+				d < 30  ? '#FFFF00' :
+				d < 40   ? '#FF3333' :
+				d < 50   ? '#8B0000' :
+							'#000000';
+	}
+
+	function style(feature) {
+		return {
+			weight: 1,
+			opacity: 1,
+			color: 'white',
+			fillOpacity: 0.7,
+			fillColor: getColor(feature.properties["Median AQI"])
+		};
+	}
+    
+    
 var iowa = L.geoJson(iowageo,{
                     pointToLayer: function(feature, latlng){
-                        return L.circleMarker(latlng, iowageo);
+                        return L.circleMarker(latlng, {radius: 8, 
+                        fillOpacity: 1, 
+                        color: 'black', 
+                        fillColor: getColor(feature.properties.MedianAQI), 
+                        weight: 1,});
+                    
     }
 }).addTo(map);   
 
     
 var illinois = L.geoJson(illinoisgeo,{
                     pointToLayer: function(feature, latlng){
-                        return L.circleMarker(latlng, illinoisgeo);
+                        return L.circleMarker(latlng, {radius: 8, 
+                        fillOpacity: 1, 
+                        color: 'black', 
+                        fillColor: getColor(feature.properties.MedianAQI), 
+                        weight: 1,});
     }
 }).addTo(map);
 	
 	//map.attributionControl.addAttribution('Population data &copy; <a href="http://census.gov/">US Census Bureau</a>');
 
-var baseLayers = {
+
+
+    
+    
+    var baseLayers = {
     "base": base
 
 };
