@@ -1,0 +1,313 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.669861,41.97805 ]
+    },
+    "properties": {
+    "CBSA":"Cedar Rapids, IA",
+    "CBSA Code":16300,
+    "Year":2019,
+    "Days with AQI":304,
+    "Good Days":247,
+    "Moderate Days":57,
+    "Unhealthy for Sensitive Groups Days":0,
+    "Unhealthy Days":"0",
+    "Very Unhealthy Days":"0",
+    "Hazardous Days":"0",
+    "Max AQI":80,
+    "90th Percentile AQI":58,
+    "Median AQI":39,
+    "Days CO":"0",
+    "Days NO2":0,
+    "Days Ozone":175,
+    "Days SO2":3,
+    "Days PM2.5":126,
+    "Days PM10":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.31349,40.63002 ]
+    },
+    "properties": {
+    "CBSA":"Fort Madison-Keokuk, IA-IL-MO",
+    "CBSA Code":22800,
+    "Year":2019,
+    "Days with AQI":90,
+    "Good Days":79,
+    "Moderate Days":11,
+    "Unhealthy for Sensitive Groups Days":0,
+    "Unhealthy Days":"0",
+    "Very Unhealthy Days":"0",
+    "Hazardous Days":"0",
+    "Max AQI":70,
+    "90th Percentile AQI":56,
+    "Median AQI":29,
+    "Days CO":"0",
+    "Days NO2":0,
+    "Days Ozone":0,
+    "Days SO2":0,
+    "Days PM2.5":90,
+    "Days PM10":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.530167,41.661129 ]
+    },
+    "properties": {
+    "CBSA":"Iowa City, IA",
+    "CBSA Code":26980,
+    "Year":2019,
+    "Days with AQI":272,
+    "Good Days":214,
+    "Moderate Days":58,
+    "Unhealthy for Sensitive Groups Days":0,
+    "Unhealthy Days":"0",
+    "Very Unhealthy Days":"0",
+    "Hazardous Days":"0",
+    "Max AQI":91,
+    "90th Percentile AQI":59,
+    "Median AQI":34,
+    "Days CO":"0",
+    "Days NO2":0,
+    "Days Ozone":0,
+    "Days SO2":0,
+    "Days PM2.5":272,
+    "Days PM10":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.19075,41.838928 ]
+    },
+    "properties": {
+    "CBSA":"Clinton, IA",
+    "CBSA Code":17540,
+    "Year":2019,
+    "Days with AQI":272,
+    "Good Days":201,
+    "Moderate Days":71,
+    "Unhealthy for Sensitive Groups Days":0,
+    "Unhealthy Days":"0",
+    "Very Unhealthy Days":"0",
+    "Hazardous Days":"0",
+    "Max AQI":89,
+    "90th Percentile AQI":61,
+    "Median AQI":43,
+    "Days CO":"0",
+    "Days NO2":0,
+    "Days Ozone":140,
+    "Days SO2":0,
+    "Days PM2.5":132,
+    "Days PM10":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.523911,41.515091 ]
+    },
+    "properties": {
+    "CBSA":"Davenport-Moline-Rock Island, IA-IL",
+    "CBSA Code":19340,
+    "Year":2019,
+    "Days with AQI":274,
+    "Good Days":165,
+    "Moderate Days":106,
+    "Unhealthy for Sensitive Groups Days":3,
+    "Unhealthy Days":"0",
+    "Very Unhealthy Days":"0",
+    "Hazardous Days":"0",
+    "Max AQI":115,
+    "90th Percentile AQI":68,
+    "Median AQI":46,
+    "Days CO":"1",
+    "Days NO2":0,
+    "Days Ozone":123,
+    "Days SO2":0,
+    "Days PM2.5":107,
+    "Days PM10":43
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.620308,41.588821 ]
+    },
+    "properties": {
+    "CBSA":"Des Moines-West Des Moines, IA",
+    "CBSA Code":19780,
+    "Year":2019,
+    "Days with AQI":305,
+    "Good Days":251,
+    "Moderate Days":53,
+    "Unhealthy for Sensitive Groups Days":0,
+    "Unhealthy Days":"0",
+    "Very Unhealthy Days":"1",
+    "Hazardous Days":"0",
+    "Max AQI":268,
+    "90th Percentile AQI":57,
+    "Median AQI":40,
+    "Days CO":"1",
+    "Days NO2":33,
+    "Days Ozone":200,
+    "Days SO2":0,
+    "Days PM2.5":71,
+    "Days PM10":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.201035,43.153572 ]
+    },
+    "properties": {
+    "CBSA":"Mason City, IA",
+    "CBSA Code":32380,
+    "Year":2019,
+    "Days with AQI":89,
+    "Good Days":89,
+    "Moderate Days":0,
+    "Unhealthy for Sensitive Groups Days":0,
+    "Unhealthy Days":"0",
+    "Very Unhealthy Days":"0",
+    "Hazardous Days":"0",
+    "Max AQI":38,
+    "90th Percentile AQI":27,
+    "Median AQI":15,
+    "Days CO":"0",
+    "Days NO2":0,
+    "Days Ozone":0,
+    "Days SO2":0,
+    "Days PM2.5":0,
+    "Days PM10":89
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.044853,41.420448 ]
+    },
+    "properties": {
+    "CBSA":"Muscatine, IA",
+    "CBSA Code":34700,
+    "Year":2019,
+    "Days with AQI":273,
+    "Good Days":226,
+    "Moderate Days":47,
+    "Unhealthy for Sensitive Groups Days":0,
+    "Unhealthy Days":"0",
+    "Very Unhealthy Days":"0",
+    "Hazardous Days":"0",
+    "Max AQI":92,
+    "90th Percentile AQI":56,
+    "Median AQI":32,
+    "Days CO":"0",
+    "Days NO2":0,
+    "Days Ozone":0,
+    "Days SO2":8,
+    "Days PM2.5":264,
+    "Days PM10":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.404938,42.496342 ]
+    },
+    "properties": {
+    "CBSA":"Sioux City, IA-NE-SD",
+    "CBSA Code":43580,
+    "Year":2019,
+    "Days with AQI":210,
+    "Good Days":172,
+    "Moderate Days":38,
+    "Unhealthy for Sensitive Groups Days":0,
+    "Unhealthy Days":"0",
+    "Very Unhealthy Days":"0",
+    "Hazardous Days":"0",
+    "Max AQI":97,
+    "90th Percentile AQI":57,
+    "Median AQI":38,
+    "Days CO":"0",
+    "Days NO2":2,
+    "Days Ozone":116,
+    "Days SO2":0,
+    "Days PM2.5":88,
+    "Days PM10":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.4534,42.537811 ]
+    },
+    "properties": {
+    "CBSA":"Waterloo-Cedar Falls, IA",
+    "CBSA Code":47940,
+    "Year":2019,
+    "Days with AQI":271,
+    "Good Days":213,
+    "Moderate Days":58,
+    "Unhealthy for Sensitive Groups Days":0,
+    "Unhealthy Days":"0",
+    "Very Unhealthy Days":"0",
+    "Hazardous Days":"0",
+    "Max AQI":90,
+    "90th Percentile AQI":62,
+    "Median AQI":41,
+    "Days CO":"0",
+    "Days NO2":0,
+    "Days Ozone":170,
+    "Days SO2":0,
+    "Days PM2.5":101,
+    "Days PM10":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.91606,41.20784 ]
+    },
+    "properties": {
+    "CBSA":"Omaha-Council Bluffs, NE-IA",
+    "CBSA Code":36540,
+    "Year":2019,
+    "Days with AQI":304,
+    "Good Days":229,
+    "Moderate Days":75,
+    "Unhealthy for Sensitive Groups Days":0,
+    "Unhealthy Days":"0",
+    "Very Unhealthy Days":"0",
+    "Hazardous Days":"0",
+    "Max AQI":97,
+    "90th Percentile AQI":60,
+    "Median AQI":42,
+    "Days CO":"0",
+    "Days NO2":0,
+    "Days Ozone":164,
+    "Days SO2":10,
+    "Days PM2.5":98,
+    "Days PM10":32
+    }
+  }
+]
+}
