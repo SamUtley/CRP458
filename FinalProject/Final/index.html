@@ -83,7 +83,7 @@
 	  
 
 
- #map { width: 650px; height: 400px; z-index:0; margin-left: 10px; padding: 20px; float: left}
+ #map { width: 650px; height: 400px; z-index:0; margin-left: 10px; padding: 20px; float: right; position:static}
 
 	.legend {
     line-height: 10px;
@@ -107,12 +107,35 @@
     margin: 0 0 5px;
     color: #777;
 }        
-        
+
+#MEDStyle {
+  background-color: #CC99FF;
+  border: none;
+  color: white;
+  padding: 20px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+    border-radius: 8px;
+    border: 2px solid grey;
+    float: center;
+    margin: 2px
+}
+#MEDStyle:hover {
+  background-color: purple;
+  color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}   
+#MEDStyle:active {
+  color: black;
+}
+
 #changestyle {
   background-color: #CC99FF;
   border: none;
   color: white;
-  padding: 20px 6px;
+  padding: 20px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -127,11 +150,14 @@
   color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+#changestyle:active {
+  color: black;
+}
 #OzoneStyle {
   background-color: #CC99FF;
   border: none;
   color: white;
-  padding: 20px 10px;
+  padding: 20px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -146,16 +172,124 @@
   color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+#OzoneStyle:active {
+  color: black;
+}
+#COStyle {
+  background-color: #CC99FF;
+  border: none;
+  color: white;
+  padding: 20px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+    border-radius: 8px;
+    border: 2px solid grey;
+    float: left;
+    margin: 2px
+}
+#COStyle:hover {
+  background-color: purple;
+  color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}      
+#COStyle:active {
+  color: black;
+}
+#NO2Style {
+  background-color: #CC99FF;
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+    border-radius: 8px;
+    border: 2px solid grey;
+    float: left;
+    margin: 2px
+}
+#NO2Style:hover {
+  background-color: purple;
+  color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#NO2Style:active {
+  color: black;
+}     
+#SO2Style {
+  background-color: #CC99FF;
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+    border-radius: 8px;
+    border: 2px solid grey;
+    float: left;
+    margin: 2px
+}
+#SO2Style:hover {
+  background-color: purple;
+  color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#SO2Style:active {
+  color: black;
+}      
+#PMStyle {
+  background-color: #CC99FF;
+  border: none;
+  color: white;
+  padding: 20px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+    border-radius: 8px;
+    border: 2px solid grey;
+    float: left;
+    margin: 2px
+}
+#PMStyle:hover {
+  background-color: purple;
+  color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+ #PMStyle:active {
+  color: black;
+}       
+
 #body {
             background-color:azure
         }
         
         #h1 {
-            margin-left: 10px
+            margin-left: 20px;
+            border-top: 10px solid purple;
+            border-left: 10px solid purple;
+            margin-right: 300px;
+            background-color: lightgray;
         }
         #par1 {
             float: right;
-            margin-right: 50px
+            margin-right: 50px;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+        #top {
+            border: 0px solid purple;
+            padding: 5px;
+            border-left-width: 10px;
+            border-bottom-width: 10px
+        }
+        #par2 {
+            background-color: lightgray;
+            color: black;
         }
         
 
@@ -193,17 +327,38 @@
 </head>
 
 <body id= 'body'>
-<h1 id=h1>Air Quality Data in Iowa and Illinois</h1>
+<h1 id=h1>Air Quality across Iowa and Illinois</h1>
 
-<div id='map'></div>
+
 <div id =par1>
-    <h2> Air Quality</h2><p id=par2> This is where the tect will go and when it gets long I will add <br> breaks</p></div>
+    <h2 id=top> Air Quality</h2><p id=par2>   
+    Air Quality is the measure of pollution in the air <br>
+    around you. Because of the drastic health effects<br> 
+    poor air quality can cause, it is important to<br>
+    know the quality of air you're breathing in.<br> 
+    Air quality is measured by assessing a number of <br>
+    different indicators of pollution. These <br>
+    indicators are called pollutants, and can be many <br>
+    different types of chemicals released into the air. 
+    <br>
+    <br>
+    <br>The most common of these pollutants are CO,<br> 
+    NO2, SO2, Ozone, and PM. To get an idea of the<br> 
+    risk to these pollutants in your area and more<br> 
+    information about each, click the buttons <br>
+    to the left. </p></div>
+<div id='map'></div>
+<button id="MEDStyle">Median AQI</button><br>
 <button id="changestyle">Good Days</button><br>
-<button id="OzoneStyle">Ozone</button>
+<button id="OzoneStyle">Ozone</button><br>
+<button id="COStyle">CO</button><br>
+<button id="NO2Style">NO2</button><br>
+<button id="SO2Style">SO2</button><br>
+<button id="PMStyle">PM</button><br>
 
 <script src="https://unpkg.com/esri-leaflet/dist/esri-leaflet.js"></script>
-<script src="../IowaAQIdata.geojson"></script>	
-<script src="../IllinoisAQIdata.geojson"></script>
+<script src="IowaAQIdata.geojson"></script>	
+<script src="IllinoisAQIdata.geojson"></script>
 <script type="text/javascript">
 
         var map = L.map('map').setView([40.384255, -91.488978], 6);
@@ -234,7 +389,7 @@ function MedAQIcolor(d) {
 				d < 30  ? '#00CC00' :
 				d < 40   ? '#00FF00' :
 				d < 50   ? '#99FF00' :
-							'#FF9900';
+							'#FFFF00';
 	}
 
 //Set up colors for percent data where low = bad, high = good
@@ -244,15 +399,15 @@ function getPercent(d) {
 				d < 40  ? '#FF9900' :
 				d < 60  ? '#FFFF00' :
 				d < 80   ? '#00FF00' :
-				d < 100   ? '#006600' :
-							'#003300';
+				d < 100   ? '#009900' :
+							'#006600';
 	}
 
 //Set up colors for percent data where low = good, high = bad
 
 function getPercent2(d) {
-		return d < 20 ? '#003300' :
-				d < 40  ? '#006600' :
+		return d < 20 ? '#006600' :
+				d < 40  ? '#009900' :
 				d < 60  ? '#00FF00' :
 				d < 80   ? '#FFFF00' :
 				d < 100   ? '#FF9900' :
@@ -269,16 +424,31 @@ function getPercent2(d) {
 //Set up styles  
 
 //MedianAQI Style
-function style(feature) {
-		return {
-			weight: 1,
+ /* var style = {
+    
+	weight: 1,
 			opacity: 1,
-			color: 'white',
-			fillOpacity: 0.7,
-			fillColor: MedAQIcolor(feature.properties.MedianAQI)
+			color: 'black',
+			fillOpacity: 1,
+			fillColor: getPercent(feature.properties.MedianAQI),
+            radius: (feature.properties.MedianAQI)/5
+            
+		
+	}
+    */
+    
+    
+//MedianAQI Style
+var MEDStyle =  function MEDStyle(feature) {
+    return {
+	weight: 1,
+			opacity: 1,
+			color: 'black',
+			fillOpacity: 1,
+			fillColor: MedAQIcolor(feature.properties.MedianAQI),
+            radius: (feature.properties.MedianAQI)/3
 		};
 	}
-    
     
  //Percent Good Days Style   
    var PercentStyle =  function newStyle(feature) {
@@ -292,10 +462,33 @@ function style(feature) {
             
 		};
 	}
-    
+   //CO style 
+   var COStyle =  function COStyle(feature) {
+    return {
+	weight: 1,
+			opacity: 1,
+			color: 'black',
+			fillOpacity: 1,
+			fillColor: getPercent2(feature.properties.PercentDaysCO),
+            radius: (feature.properties.PercentDaysCO)/1
+		};
+	}
+   
+   //NO2 Style
+    var NO2Style =  function newStyle(feature) {
+    return {
+	weight: 1,
+			opacity: 1,
+			color: 'black',
+			fillOpacity: 1,
+			fillColor: getPercent2(feature.properties.PercentDaysNO2),
+            radius: (feature.properties.PercentDaysNO2)/1
+		};
+	}
+   
     // var popup; 
    //Ozone Style
-   var OzoneStyle =  function newStyle(feature) {
+   var OzoneStyle =  function OzoneStyle(feature) {
     return {
 	weight: 1,
 			opacity: 1,
@@ -304,6 +497,29 @@ function style(feature) {
 			fillColor: getPercent2(feature.properties.PercentDaysOzone),
             radius: (feature.properties.PercentDaysOzone)/5
             //feature.bindPopup(popup)
+		};
+	}
+//SO2 style
+   var SO2Style =  function SO2Style(feature) {
+    return {
+	weight: 1,
+			opacity: 1,
+			color: 'black',
+			fillOpacity: 1,
+			fillColor: getPercent2(feature.properties.PercentDaysSO2),
+            radius: (feature.properties.PercentDaysSO2)/5
+		};
+	}
+   
+//PM style
+   var PMStyle =  function PMStyle(feature) {
+    return {
+	weight: 1,
+			opacity: 1,
+			color: 'black',
+			fillOpacity: 1,
+			fillColor: getPercent2(feature.properties.PercentDaysPM),
+            radius: (feature.properties.PercentDaysPM)/5
 		};
 	}
    
@@ -317,9 +533,13 @@ function style(feature) {
     
    var iowa = L.geoJson(iowageo,{
                     pointToLayer: function(feature, latlng){
-                        return L.circleMarker(latlng, style)
-                    }
-}).addTo(map);   
+                         return L.circleMarker(latlng, {radius: 8, 
+                        fillOpacity: 1, 
+                        color: 'black', 
+                        fillColor: 'black', 
+                        weight: 1,}).bindPopup(feature.properties.CBSA);
+    }
+}).addTo(map);  
 
     
 var illinois = L.geoJson(illinoisgeo,{
@@ -327,8 +547,8 @@ var illinois = L.geoJson(illinoisgeo,{
                         return L.circleMarker(latlng, {radius: 8, 
                         fillOpacity: 1, 
                         color: 'black', 
-                        fillColor: MedAQIcolor(feature.properties.MedianAQI), 
-                        weight: 1,});
+                        fillColor:'black', 
+                        weight: 1,}).bindPopup(feature.properties.CBSA);
     }
 }).addTo(map);
     
@@ -341,14 +561,51 @@ var legend = L.control({
     
 //Creating buttons
     
+//MedianAQI Button
+document.getElementById("MEDStyle").addEventListener("click", MEDstylefunction);
+        function MEDstylefunction() {
+                    illinois.setStyle(MEDStyle);
+                    iowa.setStyle(MEDStyle);
+            var text = 
+    "Air Quality Index is the most common measurement <br> system of air quality in the United States.<br> The measurement can go from 1 to 300+. The <br> higher the number, the more polluted the air.<br> This figure shows the breakdown of AQI and can<br> help you interpret the number in your area. <br> using the map to the left<br><img src='aqipic.jpg' width= '380', height= '175'><br> source: https://www.airnow.gov/aqi/aqi-basics/";
+            
+            document.getElementById("par2").innerHTML = text;
+            
+            var text1 = "Median AQI";
+            document.getElementById("top").innerHTML = text1;
+            
+            
+            
+
+            //MedianAQI Legend   
+    legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        color = [0, 10, 20, 30, 40, 50];
+        
+    div.innerHTML += "<b>Median AQI</b><br>";
+    for (var i = 0; i < color.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + MedAQIcolor(color[i] + 1) + '"></i> ' +
+            color[i] + (color[i + 1] ? '&ndash;' + color[i + 1] + '<br>' : '+');
+    }
+
+    return div;
+};
+legend.addTo(map); 
+        };
+    
 //Good Days Button
 document.getElementById("changestyle").addEventListener("click", newstylefunction);
         function newstylefunction() {
                     illinois.setStyle(PercentStyle);
                     iowa.setStyle(PercentStyle);
-            var text = "good days info laaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaa <br> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaa a a <br> lalalallalalalalalalal <be> lalalallal";
+            var text = 
+    "This data shows the percentage of days the AQI<br>was in the 'good' zone for each area. It is <br> important to know the quality of air you are<br>breathing in for a longer period of time.<br> because while poor air quality can have  <br>immediate health effects, breathing in poor <br>quality air day after day can have long term <br>health effects as well. This includes: <br>accelerated aging of the lungs, loss of <br>lung capacity and decreased lung function, <br>development of diseases such as asthma, <br>bronchitis, emphysema, and possibly cancer,<br>and can also cause a shortened life span.<br>For more information about the health risks<br>of poor air quality, click <a href='http://www.sparetheair.com/health.cfm'>here</a>.";
             document.getElementById("par2").innerHTML = text;
             
+            var text1 = "Good Days";
+            document.getElementById("top").innerHTML = text1;
             
             
 
@@ -370,26 +627,160 @@ document.getElementById("changestyle").addEventListener("click", newstylefunctio
 legend.addTo(map); 
         };
     
+ //CO Button
+document.getElementById("COStyle").addEventListener("click", COstylefunction);
+        function COstylefunction() {
+                    illinois.setStyle(COStyle);
+                    iowa.setStyle(COStyle);
+            var text = 
+    "Carbon Monoxide is a harmful pollutant that <br>can have deadly health effects when breathed <br> in a high concentration. Although it is<br>uncommon for high concentrations of CO to occur<br> outside, breathing in smaller amounts of CO for<br>long durations can have negative consequences.<br>CO is released into the air when something is <br>burned. Most commonly, it is caused by the<br>burning of fossil fuels in cars, trucks, and <br>other machinery.<br><br> Although CO is in smaller amounts outside, <br> it can still have poisonous effects on people <br> with health issues like heart disease, as it <br> reduces the amount of oxygen transferred to <br> the heart and brain.";
+            document.getElementById("par2").innerHTML = text;
+            
+            var text1 = "Carbon Monoxide";
+            document.getElementById("top").innerHTML = text1;
+            
+
+            //CO2 Legend   
+    legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        color = [0, 20, 40, 60, 80, 100];
+        
+    div.innerHTML += "<b>Percent Days CO</b><br>";
+    for (var i = 0; i < color.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getPercent2(color[i] + 1) + '"></i> ' +
+            color[i] + (color[i + 1] ? '&ndash;' + color[i + 1] + '<br>' : ' ');
+    }
+
+    return div;
+};
+legend.addTo(map); 
+        };
+
+//NO2 Button
+document.getElementById("NO2Style").addEventListener("click", NO2stylefunction);
+        function NO2stylefunction() {
+                    illinois.setStyle(NO2Style);
+                    iowa.setStyle(NO2Style);
+            var text = 
+    "Nitrogen dioxide is part of a group of gases <br>called Nitrous Oxides, and is used as an <br> indicator of this group of gases in the air<br>Nitrogen Dioxide gets released into the air<br> by the burning of fuel.<br><br>Nitrogen Dioxide can have harmful health <br>effects on the lungs, especially for those <br>with respiratory diseases like asthma.<br>Nitrous Oxides are highly reactive and <br>are also known for producing acid rain when <br>reacting with water, oxygen, and other <br>chemicals in the atmosphere. <br> Because of its highly reactive nature, it also reacts<br> with other chemicals in the atmosphere to create <br> Ozone, Particulate Matter, and other pollutants, <br>causing a domino effect.";
+            document.getElementById("par2").innerHTML = text;
+            
+            var text1 = "Nitrogen Dioxide";
+            document.getElementById("top").innerHTML = text1;
+            
+
+            //NO2 Legend   
+    legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        color = [0, 20, 40, 60, 80, 100];
+        
+    div.innerHTML += "<b>Percent Days NO2</b><br>";
+    for (var i = 0; i < color.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getPercent2(color[i] + 1) + '"></i> ' +
+            color[i] + (color[i + 1] ? '&ndash;' + color[i + 1] + '<br>' : ' ');
+    }
+
+    return div;
+};
+legend.addTo(map); 
+        };
+    
+    
+    
+
 //Ozone Button  
 document.getElementById("OzoneStyle").addEventListener("click", ozonestylefunction);
         function ozonestylefunction() {
                     illinois.setStyle(OzoneStyle);
+                    iowa.setStyle(OzoneStyle);
+            var text = 
+    "While ozone found naturally in the stratosphere <br>is good and can help regulate earth's temperature<br> and protect us from harmful UV rays, ozone when <br>found in the troposphere by man-made causes is<br> detrimental to your lungs. Ozone is released <br> into the air by automobile exhaust and industrial <br> emissions. It can have damaging health affects <br> when breathed in, and attacks your lungs, causing<br>breathing problems, coughing, and inflammation in <br> your respiratory tract, and even chronic obstructive <br>pulmonary disease with long term exposure.<br><br>Because ozone is caused by cars and industrial<br> emissions, it is more likely to be found in large<br> cities with many cars and industrial factories.<br> This can explain why ozone is higher in larger<br>and more industrial cities, like Saint Louis.";
+            
+            document.getElementById("par2").innerHTML = text;
                   //  illinois.bindPopup(popup1);
                    /* onEachFeature: function (feature, layer) {
          layer.bindPopup('hi');
      }*/
 
+            var text1 = "Ozone";
+            document.getElementById("top").innerHTML = text1;
+            
+            
             //Ozone Legend    
     legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        color = [20, 40, 60, 80, 100];
+        color = [0, 20, 40, 60, 80, 100];
         
     div.innerHTML += "<b>Percent Days With Ozone</b><br>";
     for (var i = 0; i < color.length; i++) {
         div.innerHTML +=
             '<i style="background:' + getPercent2(color[i] + 1) + '"></i> ' +
             color[i] + (color[i + 1] ? '&ndash;' + color[i + 1] + '<br>' : '+');
+    }
+
+    return div;
+};
+legend.addTo(map); 
+        };
+
+//SO2 Button
+document.getElementById("SO2Style").addEventListener("click", SO2stylefunction);
+        function SO2stylefunction() {
+                    illinois.setStyle(SO2Style);
+                    iowa.setStyle(SO2Style);
+            var text = "Sulfur Dioxide is a colorless, bad-smelling, toxic gas,<br> caused by burning materials that contain sulfur<br> like coal, oil, and diesel. The largest source of SO2 <br>in the atmosphere is the burning of fossil fuels by <br>power plants and other industrial facilities.<br><br> Smaller sources of SO2 emissions include: <br>industrial processes such as extracting metal from<br> ore; natural sources such as volcanoes; and <br>cars, ships and other vehicles and heavy equipment <br>that burn fuel with a high sulfur content.<br><br> Sulfur Dioxide can cause respiratory problems and <br>make breathing difficult. Along with that,<br>SO2 harms the environment by damaging foliage on <br>trees and plants at high concentrations";
+            document.getElementById("par2").innerHTML = text;
+            
+            var text1 = "Sulfur Dioxide";
+            document.getElementById("top").innerHTML = text1;
+            
+
+            //NO2 Legend   
+    legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        color = [0, 20, 40, 60, 80, 100];
+        
+    div.innerHTML += "<b>Percent Days SO2</b><br>";
+    for (var i = 0; i < color.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getPercent2(color[i] + 1) + '"></i> ' +
+            color[i] + (color[i + 1] ? '&ndash;' + color[i + 1] + '<br>' : ' ');
+    }
+
+    return div;
+};
+legend.addTo(map); 
+        };
+    
+//PM Button
+document.getElementById("PMStyle").addEventListener("click", PMstylefunction);
+        function PMstylefunction() {
+                    illinois.setStyle(PMStyle);
+                    iowa.setStyle(PMStyle);
+            var text = "Particulate matter is a pollutant that is a mixture <br>of solid particles and liquid droplets found in <br>the air ranging in size. Some are large enough to be<br> seen by the human eye, like dust and dirt, but<br> some are so small they need a microscope to be seen. <br>Particulate matter isn't just one chemical, but<br> can be hundreds of different chemicals in the<br> air you breathe and can be harmful to your lungs.<br> Particulate matter can be produced directly<br> from a site, or can be the product of a chemical<br> reaction of other gasses in the air. <br><br> Particulate matter can cause health effects in the lungs<br> and heart and are even linked to heart attacks<br> and irregular heartbeat";
+            document.getElementById("par2").innerHTML = text;
+            
+            var text1 = "Particulate Matter";
+            document.getElementById("top").innerHTML = text1;
+            
+
+            //NO2 Legend   
+    legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        color = [0, 20, 40, 60, 80, 100];
+        
+    div.innerHTML += "<b>Percent Days PM</b><br>";
+    for (var i = 0; i < color.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getPercent2(color[i] + 1) + '"></i> ' +
+            color[i] + (color[i + 1] ? '&ndash;' + color[i + 1] + '<br>' : ' ');
     }
 
     return div;
