@@ -357,8 +357,8 @@
 <button id="PMStyle">PM</button><br>
 
 <script src="https://unpkg.com/esri-leaflet/dist/esri-leaflet.js"></script>
-<script src="IowaAQIdata.geojson"></script>	
-<script src="IllinoisAQIdata.geojson"></script>
+<script src="../IowaAQIdata.geojson"></script>	
+<script src="../IllinoisAQIdata.geojson"></script>
 <script type="text/javascript">
 
         var map = L.map('map').setView([40.384255, -91.488978], 6);
@@ -567,7 +567,7 @@ document.getElementById("MEDStyle").addEventListener("click", MEDstylefunction);
                     illinois.setStyle(MEDStyle);
                     iowa.setStyle(MEDStyle);
             var text = 
-    "Air Quality Index is the most common measurement <br> system of air quality in the United States.<br> The measurement can go from 1 to 300+. The <br> higher the number, the more polluted the air.<br> This figure shows the breakdown of AQI and can<br> help you interpret the number in your area. <br> using the map to the left<br><img src='aqipic.jpg' width= '380', height= '175'><br> source: https://www.airnow.gov/aqi/aqi-basics/";
+    "Air Quality Index is the most common measurement <br> system of air quality in the United States.<br> The measurement can go from 1 to 300+. The <br> higher the number, the more polluted the air.<br> This figure shows the breakdown of AQI and can<br> help you interpret the number in your area. <br> using the map to the left<br><img src='../aqipic.jpg' width= '380', height= '175'><br> source: https://www.airnow.gov/aqi/aqi-basics/";
             
             document.getElementById("par2").innerHTML = text;
             
