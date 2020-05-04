@@ -291,7 +291,10 @@
             background-color: lightgray;
             color: black;
         }
-        
+	 #buttons {
+            position:absolute;
+            LEFT: 2px
+        }
 
     </style>
 	<title>Choropleth Tutorial - Leaflet</title>
@@ -348,6 +351,7 @@
     information about each, click the buttons <br>
     to the left. </p></div>
 <div id='map'></div>
+<div id='buttons'>
 <button id="MEDStyle">Median AQI</button><br>
 <button id="changestyle">Good Days</button><br>
 <button id="OzoneStyle">Ozone</button><br>
@@ -355,7 +359,7 @@
 <button id="NO2Style">NO2</button><br>
 <button id="SO2Style">SO2</button><br>
 <button id="PMStyle">PM</button><br>
-
+</div>
 <script src="https://unpkg.com/esri-leaflet/dist/esri-leaflet.js"></script>
 <script src="../IowaAQIdata.geojson"></script>	
 <script src="../IllinoisAQIdata.geojson"></script>
